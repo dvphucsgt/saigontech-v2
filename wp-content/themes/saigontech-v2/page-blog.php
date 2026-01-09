@@ -9,9 +9,12 @@ get_header(); ?>
     <section class="bg-primary text-white py-5">
         <div class="container py-4">
             <div class="sgtech-v2-max-w-600">
-                <h1 class="text-white fw-bold mb-4 sgtech-v2-blog-hero-title">Blog & Tin tức</h1>
-                <p class="text-white leading-relaxed sgtech-v2-blog-hero-desc">Cập nhật kiến thức
-                    công nghệ, xu hướng chuyển đổi số và câu chuyện thành công từ các dự án thực tế của SGTech.</p>
+                <h1 class="text-white fw-bold mb-4 sgtech-v2-blog-hero-title">
+                    <?php _e('Blog & Tin tức', 'saigontech-v2'); ?>
+                </h1>
+                <p class="text-white leading-relaxed sgtech-v2-blog-hero-desc">
+                    <?php _e('Cập nhật kiến thức công nghệ, xu hướng chuyển đổi số và câu chuyện thành công từ các dự án thực tế của SGTech.', 'saigontech-v2'); ?>
+                </p>
             </div>
         </div>
     </section>
@@ -20,40 +23,45 @@ get_header(); ?>
         <div class="container">
             <div class="d-flex flex-column flex-md-row gap-3 align-items-center justify-content-between">
                 <?php
-                // Get the current page URL reliably
-                $base_url = get_permalink();
+                // Get the current PAGE URL reliably (not post URL)
+                $blog_page_id = get_queried_object_id();
+                $base_url = get_permalink($blog_page_id);
                 ?>
-                <form action="<?php echo esc_url(home_url('/blog/')); ?>" method="get"
-                    class="position-relative sgtech-v2-w-320" id="blog-search-form">
+                <form action="<?php echo esc_url($base_url); ?>" method="get" class="position-relative sgtech-v2-w-320"
+                    id="blog-search-form">
                     <div class="input-group">
                         <span class="input-group-text bg-white border-end-0">
                             <i class="bi bi-search sgtech-v2-text-muted-foreground"></i>
                         </span>
                         <input type="text" name="s" class="form-control border-start-0 ps-0"
-                            placeholder="Tìm kiếm bài viết..." id="sgtech-v2-blog-search"
-                            value="<?php echo get_search_query(); ?>">
-                        <button class="btn btn-outline-secondary" type="submit">Tìm</button>
+                            placeholder="<?php esc_attr_e('Tìm kiếm bài viết...', 'saigontech-v2'); ?>"
+                            id="sgtech-v2-blog-search" value="<?php echo get_search_query(); ?>">
+                        <button class="btn btn-outline-secondary"
+                            type="submit"><?php _e('Tìm', 'saigontech-v2'); ?></button>
                     </div>
                 </form>
                 <div class="d-flex gap-2 flex-wrap justify-content-center">
                     <?php
-                    $current_cat = get_query_var('category_name');
+                    $current_cat = isset($_GET['category_name']) ? sanitize_text_field($_GET['category_name']) : '';
                     $categories = array(
-                        '' => 'Tất cả',
-                        'chuyen-doi-so' => 'Chuyển đổi số',
-                        'case-study' => 'Case Study',
-                        'bao-mat' => 'Bảo mật',
-                        'cong-nghe' => 'Công nghệ'
+                        '' => __('Tất cả', 'saigontech-v2'),
+                        'chuyen-doi-so' => __('Chuyển đổi số', 'saigontech-v2'),
+                        'case-study' => __('Case Study', 'saigontech-v2'),
+                        'bao-mat' => __('Bảo mật', 'saigontech-v2'),
+                        'cong-nghe' => __('Công nghệ', 'saigontech-v2')
                     );
 
                     foreach ($categories as $slug => $name):
                         $is_active = ($current_cat === $slug);
                         $btn_class = $is_active ? 'btn-secondary active' : 'btn-outline-secondary';
 
-                        // Use standard WP archive URLs for maximum compatibility
-                        $url = home_url('/blog/');
+                        // Use saved blog page URL to keep language context
+                        $url = $base_url;
                         if ($slug !== '') {
                             $url = add_query_arg('category_name', $slug, $url);
+                        } else {
+                            // "Tất cả" - remove category_name param
+                            $url = remove_query_arg('category_name', $url);
                         }
                         ?>
                         <a href="<?php echo esc_url($url); ?>"
@@ -73,10 +81,83 @@ get_header(); ?>
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $posts_per_page = 9;
 
+            // Get current language from Polylang
+            $current_lang = 'vi'; // Default
+            if (function_exists('pll_current_language')) {
+                $current_lang = pll_current_language('slug');
+            }
+
+            // Get category ID directly from database (bypass Polylang filter)
+            global $wpdb;
+            $lang_category_id = $wpdb->get_var($wpdb->prepare(
+                "SELECT t.term_id FROM {$wpdb->terms} t 
+                 INNER JOIN {$wpdb->term_taxonomy} tt ON t.term_id = tt.term_id 
+                 WHERE t.slug = %s AND tt.taxonomy = 'category'",
+                $current_lang
+            ));
+
+            echo "<!-- DEBUG: category '{$current_lang}' ID = " . ($lang_category_id ? $lang_category_id : 'NOT FOUND') . " -->";
+
+            // Category Translation Map
+            $category_translations = array(
+                'en' => array(
+                    'Công nghệ' => 'Technology',
+                    'Bảo mật' => 'Security',
+                    'Chuyển đổi số' => 'Digital Transformation',
+                    'Case Study' => 'Case Study'
+                ),
+                'ja' => array(
+                    'Công nghệ' => 'テクノロジー',
+                    'Bảo mật' => 'セキュリティ',
+                    'Chuyển đổi số' => 'デジタル変革',
+                    'Case Study' => 'ケーススタディ'
+                )
+            );
+
+            // Helper to translate category name
+            $translate_category = function ($name) use ($current_lang, $category_translations) {
+                if (isset($category_translations[$current_lang]) && isset($category_translations[$current_lang][$name])) {
+                    return $category_translations[$current_lang][$name];
+                }
+                return $name; // Fallback to original name
+            };
+
+            // Helper to get display category (filter out language cats)
+            $get_display_category = function ($post_id) use ($translate_category) {
+                $cats = get_the_category($post_id);
+                foreach ($cats as $cat) {
+                    if (!in_array($cat->slug, array('vi', 'en', 'ja', 'uncategorized'))) {
+                        return $translate_category($cat->name);
+                    }
+                }
+                // Fallback if only language category exists
+                if (!empty($cats)) {
+                    return $translate_category($cats[0]->name);
+                }
+                return '';
+            };
+            // Fallback to 'vi' if not found
+            if (!$lang_category_id) {
+                $lang_category_id = $wpdb->get_var(
+                    "SELECT t.term_id FROM {$wpdb->terms} t 
+                     INNER JOIN {$wpdb->term_taxonomy} tt ON t.term_id = tt.term_id 
+                     WHERE t.slug = 'vi' AND tt.taxonomy = 'category'"
+                );
+            }
+
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => $posts_per_page,
-                'paged' => $paged
+                'paged' => $paged,
+                'lang' => '', // Bypass Polylang filter for posts
+                // Filter by language category using term_id
+                'tax_query' => array(
+                    array(
+                        'taxonomy' => 'category',
+                        'field' => 'term_id',
+                        'terms' => (int) $lang_category_id,
+                    ),
+                ),
             );
 
             // Logic differentiation: Main Blog vs Search/Category
@@ -96,8 +177,26 @@ get_header(); ?>
                 // Search or Category: No Featured Post, standard 9 per page
                 if (get_search_query())
                     $args['s'] = get_search_query();
-                if (get_query_var('category_name'))
-                    $args['category_name'] = get_query_var('category_name');
+                if (get_query_var('category_name')) {
+                    // Get topic category ID directly from database (bypass Polylang filter)
+                    $topic_slug = get_query_var('category_name');
+                    $topic_category_id = $wpdb->get_var($wpdb->prepare(
+                        "SELECT t.term_id FROM {$wpdb->terms} t 
+                         INNER JOIN {$wpdb->term_taxonomy} tt ON t.term_id = tt.term_id 
+                         WHERE t.slug = %s AND tt.taxonomy = 'category'",
+                        $topic_slug
+                    ));
+
+                    if ($topic_category_id) {
+                        // Add topic category filter while keeping language category
+                        $args['tax_query'][] = array(
+                            'taxonomy' => 'category',
+                            'field' => 'term_id',
+                            'terms' => (int) $topic_category_id,
+                        );
+                        $args['tax_query']['relation'] = 'AND';
+                    }
+                }
 
                 // Do NOT use offset for standard pagination to keep max_num_pages valid
                 unset($args['offset']);
@@ -111,11 +210,20 @@ get_header(); ?>
                     <section class="sgtech-v2-section-padding sgtech-v2-featured-post">
                         <div class="container">
                             <?php
-                            // Get the first post for featured display
-                            $featured_query = new WP_Query(array(
+                            // Get the first post for featured display (same language category)
+                            $featured_args = array(
                                 'posts_per_page' => 1,
-                                'ignore_sticky_posts' => 1
-                            ));
+                                'ignore_sticky_posts' => 1,
+                                'lang' => '', // Bypass Polylang filter
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'category',
+                                        'field' => 'term_id',
+                                        'terms' => (int) $lang_category_id,
+                                    ),
+                                ),
+                            );
+                            $featured_query = new WP_Query($featured_args);
                             if ($featured_query->have_posts()):
                                 while ($featured_query->have_posts()):
                                     $featured_query->the_post();
@@ -136,12 +244,13 @@ get_header(); ?>
                                                     <div class="p-4 p-lg-5">
                                                         <div class="d-flex align-items-center gap-3 mb-3">
                                                             <?php
-                                                            $categories = get_the_category();
-                                                            if (!empty($categories)) {
-                                                                echo '<span class="badge badge-secondary">' . esc_html($categories[0]->name) . '</span>';
+                                                            $display_cat_name = $get_display_category(get_the_ID());
+                                                            if ($display_cat_name) {
+                                                                echo '<span class="badge badge-secondary">' . esc_html($display_cat_name) . '</span>';
                                                             }
                                                             ?>
-                                                            <span class="small sgtech-v2-text-muted-foreground">Bài viết nổi bật</span>
+                                                            <span
+                                                                class="small sgtech-v2-text-muted-foreground"><?php _e('Bài viết nổi bật', 'saigontech-v2'); ?></span>
                                                         </div>
                                                         <h2 class="h3 fw-bold mb-3">
                                                             <?php the_title(); ?>
@@ -155,8 +264,7 @@ get_header(); ?>
                                                                 <?php echo get_the_date(); ?>
                                                             </span>
                                                             <span><i class="bi bi-clock me-1"></i>
-                                                                <?php echo saigontech_v2_estimate_reading_time(get_the_content()); ?>
-                                                                phút đọc
+                                                                <?php printf(__('%d phút đọc', 'saigontech-v2'), saigontech_v2_estimate_reading_time(get_the_content())); ?>
                                                             </span>
                                                         </div>
                                                     </div>
@@ -178,9 +286,9 @@ get_header(); ?>
                         <h2 class="h5 fw-bold mb-4 sgtech-v2-results-count">
                             <?php
                             if (get_search_query() || get_query_var('category_name')) {
-                                echo 'Kết quả tìm kiếm';
+                                _e('Kết quả tìm kiếm', 'saigontech-v2');
                             } else {
-                                echo 'Bài viết mới nhất';
+                                _e('Bài viết mới nhất', 'saigontech-v2');
                             }
                             ?>
                         </h2>
@@ -203,14 +311,13 @@ get_header(); ?>
                                             <div class="card-body p-4">
                                                 <div class="d-flex justify-content-between mb-3">
                                                     <?php
-                                                    $categories = get_the_category();
-                                                    if (!empty($categories)) {
-                                                        echo '<span class="badge badge-soft-secondary">' . esc_html($categories[0]->name) . '</span>';
+                                                    $display_cat_name = $get_display_category(get_the_ID());
+                                                    if ($display_cat_name) {
+                                                        echo '<span class="badge badge-soft-secondary">' . esc_html($display_cat_name) . '</span>';
                                                     }
                                                     ?>
                                                     <span class="small sgtech-v2-text-muted-foreground">
-                                                        <?php echo saigontech_v2_estimate_reading_time(get_the_content()); ?>
-                                                        phút đọc
+                                                        <?php printf(__('%d phút đọc', 'saigontech-v2'), saigontech_v2_estimate_reading_time(get_the_content())); ?>
                                                     </span>
                                                 </div>
                                                 <h5 class="card-title fw-bold sgtech-v2-line-clamp-2 mb-2 card-title-lg">
@@ -248,8 +355,8 @@ get_header(); ?>
                             $pagination = paginate_links(array(
                                 'total' => $total_pages,
                                 'current' => $paged,
-                                'prev_text' => '<i class="bi bi-chevron-left me-2"></i> Trước',
-                                'next_text' => 'Sau <i class="bi bi-chevron-right ms-2"></i>',
+                                'prev_text' => '<i class="bi bi-chevron-left me-2"></i> ' . __('Trước', 'saigontech-v2'),
+                                'next_text' => __('Sau', 'saigontech-v2') . ' <i class="bi bi-chevron-right ms-2"></i>',
                                 'type' => 'plain',
                                 'add_args' => array(
                                     's' => get_search_query(),
@@ -277,7 +384,7 @@ get_header(); ?>
             <?php else: ?>
                 <section class="sgtech-v2-section-padding">
                     <div class="container text-center">
-                        <p>Chưa có bài viết nào.</p>
+                        <p><?php _e('Chưa có bài viết nào.', 'saigontech-v2'); ?></p>
                     </div>
                 </section>
             <?php endif; ?>
@@ -286,9 +393,12 @@ get_header(); ?>
 
     <section class="sgtech-v2-section-padding bg-primary text-white">
         <div class="container text-center sgtech-v2-max-w-600">
-            <h2 class="h3 fw-bold mb-3">Cần tư vấn về giải pháp công nghệ?</h2>
-            <p class="opacity-75 mb-4">Đội ngũ chuyên gia SGTech sẵn sàng hỗ trợ bạn tìm ra giải pháp phù hợp nhất.</p>
-            <a href="<?php echo home_url('/lien-he'); ?>" class="btn btn-secondary btn-lg">Liên hệ tư vấn<i
+            <h2 class="h3 fw-bold mb-3"><?php _e('Cần tư vấn về giải pháp công nghệ?', 'saigontech-v2'); ?></h2>
+            <p class="opacity-75 mb-4">
+                <?php _e('Đội ngũ chuyên gia SGTech sẵn sàng hỗ trợ bạn tìm ra giải pháp phù hợp nhất.', 'saigontech-v2'); ?>
+            </p>
+            <a href="<?php echo sgtech_get_page_url('lien-he'); ?>"
+                class="btn btn-secondary btn-lg"><?php _e('Liên hệ tư vấn', 'saigontech-v2'); ?><i
                     class="bi bi-arrow-right ms-2"></i></a>
         </div>
     </section>

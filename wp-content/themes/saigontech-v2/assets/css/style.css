@@ -1932,6 +1932,7 @@ img {
         max-height: 240px !important;
     }
 }
+
 /* Pagination */
 .sgtech-v2-pagination {
     display: flex;
@@ -1991,4 +1992,63 @@ img {
         height: 2.25rem;
         font-size: 0.8125rem;
     }
+}
+
+/* Polylang Language Switcher Styles */
+#langSwitcher,
+#langSwitcherFallback {
+    min-width: auto;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    border-radius: var(--radius-lg);
+    background: transparent;
+    border: 1.5px solid var(--secondary);
+    color: var(--secondary);
+    transition: all 0.2s ease;
+}
+
+#langSwitcher:hover,
+#langSwitcherFallback:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+#langSwitcher+.dropdown-menu,
+#langSwitcherFallback+.dropdown-menu {
+    min-width: 130px;
+    padding: 0.5rem 0;
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+    margin-top: 0.5rem;
+}
+
+.dropdown-menu li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-menu li a,
+.dropdown-menu .dropdown-item {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--foreground);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.dropdown-menu li a:hover,
+.dropdown-menu .dropdown-item:hover {
+    background-color: rgba(59, 130, 246, 0.08);
+    color: var(--secondary);
+}
+
+.dropdown-menu li a.current-lang {
+    color: var(--secondary);
+    font-weight: 600;
+    background-color: rgba(59, 130, 246, 0.05);
 }

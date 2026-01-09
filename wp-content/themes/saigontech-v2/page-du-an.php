@@ -11,13 +11,10 @@ get_header(); ?>
             <div class="text-center mx-auto sgtech-v2-max-w-700">
                 <div class="sgtech-v2-hero-badge mb-4">
                     <i class="bi bi-graph-up-arrow"></i>
-                    Kết quả thực tế
+                    <?php _e('Kết quả thực tế', 'saigontech-v2'); ?>
                 </div>
-                <h1 class="mb-4 text-white">Dự án tiêu biểu</h1>
-                <p class="opacity-75 fs-5 leading-relaxed">
-                    Mỗi dự án là một câu chuyện về sự hợp tác, sáng tạo và cam kết
-                    mang lại giá trị thực sự cho khách hàng.
-                </p>
+                <h1 class="mb-4 text-white"><?php _e('Dự án tiêu biểu', 'saigontech-v2'); ?></h1>
+                <?php _e('Mỗi dự án là một câu chuyện về sự hợp tác, sáng tạo và cam kết mang lại giá trị thực sự cho khách hàng.', 'saigontech-v2'); ?>
             </div>
         </div>
     </section>
@@ -33,20 +30,21 @@ get_header(); ?>
                             alt="PropTech Manager" class="w-100 sgtech-v2-object-cover sgtech-v2-aspect-4-3">
                         <span class="position-absolute top-0 start-0 m-3 badge bg-primary">
                             <i class="bi bi-building me-1"></i>
-                            Bất động sản
+                            <?php _e('Bất động sản', 'saigontech-v2'); ?>
                         </span>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="h3 fw-bold mb-3">PropTech Manager - Hệ thống quản lý BĐS</h2>
+                    <h2 class="h3 fw-bold mb-3"><?php _e('PropTech Manager - Hệ thống quản lý BĐS', 'saigontech-v2'); ?>
+                    </h2>
                     <div class="d-flex flex-wrap gap-3 mb-3 small sgtech-v2-text-muted-foreground">
                         <span class="d-flex align-items-center gap-1">
                             <i class="bi bi-people"></i>
-                            Công ty CP Địa ốc ABC
+                            <?php _e('Công ty CP Địa ốc ABC', 'saigontech-v2'); ?>
                         </span>
                         <span class="d-flex align-items-center gap-1">
                             <i class="bi bi-clock"></i>
-                            8 tháng
+                            <?php _e('8 tháng', 'saigontech-v2'); ?>
                         </span>
                     </div>
                     <div class="d-flex flex-wrap gap-2 mb-4">
@@ -56,41 +54,37 @@ get_header(); ?>
                         <span class="badge badge-secondary">AWS</span>
                     </div>
                     <div class="mb-4">
-                        <h6 class="text-secondary fw-semibold mb-2">Thách thức</h6>
-                        <p class="sgtech-v2-text-muted-foreground small leading-relaxed">
-                            Khách hàng đang sử dụng nhiều công cụ rời rạc (Excel, Google Sheets, CRM riêng) để quản
-                            lý quỹ căn hộ, khách hàng tiềm năng và hợp đồng bán hàng. Việc này gây mất thời gian, dễ
-                            sai sót và khó theo dõi báo cáo.
-                        </p>
+                        <h6 class="text-secondary fw-semibold mb-2"><?php _e('Thách thức', 'saigontech-v2'); ?></h6>
+                        <?php _e('Khách hàng đang sử dụng nhiều công cụ rời rạc (Excel, Google Sheets, CRM riêng) để quản lý quỹ căn hộ, khách hàng tiềm năng và hợp đồng bán hàng. Việc này gây mất thời gian, dễ sai sót và khó theo dõi báo cáo.', 'saigontech-v2'); ?>
                     </div>
                     <div class="mb-4">
-                        <h6 class="text-secondary fw-semibold mb-2">Giải pháp SGTech</h6>
-                        <p class="sgtech-v2-text-muted-foreground small leading-relaxed">
-                            SGTech phát triển nền tảng PropTech Manager toàn diện với các module: Quỹ sản phẩm
-                            (5,000+ căn), CRM khách hàng, Quản lý hợp đồng điện tử, Dashboard báo cáo real-time.
-                            Tích hợp với hệ thống kế toán và marketing automation.
-                        </p>
+                        <h6 class="text-secondary fw-semibold mb-2"><?php _e('Giải pháp SGTech', 'saigontech-v2'); ?>
+                        </h6>
+                        <?php _e('SGTech phát triển nền tảng PropTech Manager toàn diện với các module: Quỹ sản phẩm (5,000+ căn), CRM khách hàng, Quản lý hợp đồng điện tử, Dashboard báo cáo real-time. Tích hợp với hệ thống kế toán và marketing automation.', 'saigontech-v2'); ?>
                     </div>
                     <div class="row g-3">
                         <div class="col-4">
                             <div class="sgtech-v2-result-card">
                                 <div class="sgtech-v2-metric">40%</div>
-                                <div class="small sgtech-v2-text-muted-foreground mt-1">Giảm thời gian xử lý giao
-                                    dịch</div>
+                                <div class="small sgtech-v2-text-muted-foreground mt-1">
+                                    <?php _e('Giảm thời gian xử lý giao dịch', 'saigontech-v2'); ?>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="sgtech-v2-result-card">
                                 <div class="sgtech-v2-metric">25%</div>
-                                <div class="small sgtech-v2-text-muted-foreground mt-1">Tăng tỷ lệ chuyển đổi khách
-                                    hàng</div>
+                                <div class="small sgtech-v2-text-muted-foreground mt-1">
+                                    <?php _e('Tăng tỷ lệ chuyển đổi khách hàng', 'saigontech-v2'); ?>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="sgtech-v2-result-card">
                                 <div class="sgtech-v2-metric">5,000+</div>
-                                <div class="small sgtech-v2-text-muted-foreground mt-1">Căn hộ quản lý trên một nền
-                                    tảng</div>
+                                <div class="small sgtech-v2-text-muted-foreground mt-1">
+                                    <?php _e('Căn hộ quản lý trên một nền tảng', 'saigontech-v2'); ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -105,20 +99,21 @@ get_header(); ?>
                             alt="OmniMart" class="w-100 sgtech-v2-object-cover sgtech-v2-aspect-4-3">
                         <span class="position-absolute top-0 start-0 m-3 badge bg-primary">
                             <i class="bi bi-bag me-1"></i>
-                            Bán lẻ
+                            <?php _e('Bán lẻ', 'saigontech-v2'); ?>
                         </span>
                     </div>
                 </div>
                 <div class="col-lg-6 order-lg-1">
-                    <h2 class="h3 fw-bold mb-3">OmniMart - Nền tảng E-commerce đa kênh</h2>
+                    <h2 class="h3 fw-bold mb-3"><?php _e('OmniMart - Nền tảng E-commerce đa kênh', 'saigontech-v2'); ?>
+                    </h2>
                     <div class="d-flex flex-wrap gap-3 mb-3 small sgtech-v2-text-muted-foreground">
                         <span class="d-flex align-items-center gap-1">
                             <i class="bi bi-people"></i>
-                            Chuỗi siêu thị XYZ Mart
+                            <?php _e('Chuỗi siêu thị XYZ Mart', 'saigontech-v2'); ?>
                         </span>
                         <span class="d-flex align-items-center gap-1">
                             <i class="bi bi-clock"></i>
-                            6 tháng
+                            <?php _e('6 tháng', 'saigontech-v2'); ?>
                         </span>
                     </div>
                     <div class="d-flex flex-wrap gap-2 mb-4">
@@ -128,40 +123,36 @@ get_header(); ?>
                         <span class="badge badge-secondary">Stripe</span>
                     </div>
                     <div class="mb-4">
-                        <h6 class="text-secondary fw-semibold mb-2">Thách thức</h6>
-                        <p class="sgtech-v2-text-muted-foreground small leading-relaxed">
-                            Chuỗi 15 cửa hàng cần mở rộng kênh bán online nhưng gặp khó khăn trong việc đồng bộ tồn
-                            kho real-time với hệ thống POS hiện có. Khách hàng thường xuyên đặt hàng những sản phẩm
-                            đã hết.
-                        </p>
+                        <h6 class="text-secondary fw-semibold mb-2"><?php _e('Thách thức', 'saigontech-v2'); ?></h6>
+                        <?php _e('Chuỗi 15 cửa hàng cần mở rộng kênh bán online nhưng gặp khó khăn trong việc đồng bộ tồn kho real-time với hệ thống POS hiện có. Khách hàng thường xuyên đặt hàng những sản phẩm đã hết.', 'saigontech-v2'); ?>
                     </div>
                     <div class="mb-4">
-                        <h6 class="text-secondary fw-semibold mb-2">Giải pháp SGTech</h6>
-                        <p class="sgtech-v2-text-muted-foreground small leading-relaxed">
-                            Xây dựng nền tảng e-commerce OmniMart với: Website responsive + App mobile, tích hợp
-                            2-way sync với POS, hệ thống Click & Collect, chương trình loyalty tích điểm, thanh toán
-                            đa phương thức.
-                        </p>
+                        <h6 class="text-secondary fw-semibold mb-2"><?php _e('Giải pháp SGTech', 'saigontech-v2'); ?>
+                        </h6>
+                        <?php _e('Xây dựng nền tảng e-commerce OmniMart với: Website responsive + App mobile, tích hợp 2-way sync với POS, hệ thống Click & Collect, chương trình loyalty tích điểm, thanh toán đa phương thức.', 'saigontech-v2'); ?>
                     </div>
                     <div class="row g-3">
                         <div class="col-4">
                             <div class="sgtech-v2-result-card">
                                 <div class="sgtech-v2-metric">6 tháng</div>
-                                <div class="small sgtech-v2-text-muted-foreground mt-1">Thời gian go-live từ ý tưởng
+                                <div class="small sgtech-v2-text-muted-foreground mt-1">
+                                    <?php _e('Thời gian go-live từ ý tưởng', 'saigontech-v2'); ?>
                                 </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="sgtech-v2-result-card">
                                 <div class="sgtech-v2-metric">10K+</div>
-                                <div class="small sgtech-v2-text-muted-foreground mt-1">Đơn hàng/tháng sau 3 tháng
+                                <div class="small sgtech-v2-text-muted-foreground mt-1">
+                                    <?php _e('Đơn hàng/tháng sau 3 tháng', 'saigontech-v2'); ?>
                                 </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="sgtech-v2-result-card">
                                 <div class="sgtech-v2-metric">99.9%</div>
-                                <div class="small sgtech-v2-text-muted-foreground mt-1">Độ chính xác đồng bộ kho
+                                <div class="small sgtech-v2-text-muted-foreground mt-1">
+                                    <?php _e('Độ chính xác đồng bộ kho', 'saigontech-v2'); ?>
                                 </div>
                             </div>
                         </div>
@@ -177,20 +168,21 @@ get_header(); ?>
                             alt="SmartMES" class="w-100 sgtech-v2-object-cover sgtech-v2-aspect-4-3">
                         <span class="position-absolute top-0 start-0 m-3 badge bg-primary">
                             <i class="bi bi-buildings me-1"></i>
-                            Sản xuất
+                            <?php _e('Sản xuất', 'saigontech-v2'); ?>
                         </span>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="h3 fw-bold mb-3">SmartMES - Hệ thống điều hành sản xuất</h2>
+                    <h2 class="h3 fw-bold mb-3"><?php _e('SmartMES - Hệ thống điều hành sản xuất', 'saigontech-v2'); ?>
+                    </h2>
                     <div class="d-flex flex-wrap gap-3 mb-3 small sgtech-v2-text-muted-foreground">
                         <span class="d-flex align-items-center gap-1">
                             <i class="bi bi-people"></i>
-                            Công ty TNHH Sản xuất DEF
+                            <?php _e('Công ty TNHH Sản xuất DEF', 'saigontech-v2'); ?>
                         </span>
                         <span class="d-flex align-items-center gap-1">
                             <i class="bi bi-clock"></i>
-                            12 tháng
+                            <?php _e('12 tháng', 'saigontech-v2'); ?>
                         </span>
                     </div>
                     <div class="d-flex flex-wrap gap-2 mb-4">
@@ -200,40 +192,37 @@ get_header(); ?>
                         <span class="badge badge-secondary">IoT</span>
                     </div>
                     <div class="mb-4">
-                        <h6 class="text-secondary fw-semibold mb-2">Thách thức</h6>
-                        <p class="sgtech-v2-text-muted-foreground small leading-relaxed">
-                            Nhà máy với 3 dây chuyền sản xuất chưa có hệ thống giám sát tập trung. Việc thu thập dữ
-                            liệu OEE, quản lý chất lượng và truy xuất nguồn gốc đều làm thủ công, chậm và thiếu
-                            chính xác.
-                        </p>
+                        <h6 class="text-secondary fw-semibold mb-2"><?php _e('Thách thức', 'saigontech-v2'); ?></h6>
+                        <?php _e('Nhà máy với 3 dây chuyền sản xuất chưa có hệ thống giám sát tập trung. Việc thu thập dữ liệu OEE, quản lý chất lượng và truy xuất nguồn gốc đều làm thủ công, chậm và thiếu chính xác.', 'saigontech-v2'); ?>
                     </div>
                     <div class="mb-4">
-                        <h6 class="text-secondary fw-semibold mb-2">Giải pháp SGTech</h6>
-                        <p class="sgtech-v2-text-muted-foreground small leading-relaxed">
-                            Triển khai SmartMES tích hợp 50+ IoT sensors trên dây chuyền: Dashboard giám sát OEE
-                            real-time, cảnh báo tự động khi có sự cố, quản lý lô hàng và truy xuất nguồn gốc theo
-                            tiêu chuẩn ISO.
-                        </p>
+                        <h6 class="text-secondary fw-semibold mb-2"><?php _e('Giải pháp SGTech', 'saigontech-v2'); ?>
+                        </h6>
+                        <?php _e('Triển khai SmartMES tích hợp 50+ IoT sensors trên dây chuyền: Dashboard giám sát OEE real-time, cảnh báo tự động khi có sự cố, quản lý lô hàng và truy xuất nguồn gốc theo tiêu chuẩn ISO.', 'saigontech-v2'); ?>
                     </div>
                     <div class="row g-3">
                         <div class="col-4">
                             <div class="sgtech-v2-result-card">
                                 <div class="sgtech-v2-metric">15%</div>
-                                <div class="small sgtech-v2-text-muted-foreground mt-1">Tăng hiệu suất thiết bị
-                                    (OEE)</div>
+                                <div class="small sgtech-v2-text-muted-foreground mt-1">
+                                    <?php _e('Tăng hiệu suất thiết bị (OEE)', 'saigontech-v2'); ?>
+                                </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="sgtech-v2-result-card">
                                 <div class="sgtech-v2-metric">30%</div>
-                                <div class="small sgtech-v2-text-muted-foreground mt-1">Giảm tỷ lệ sản phẩm lỗi
+                                <div class="small sgtech-v2-text-muted-foreground mt-1">
+                                    <?php _e('Giảm tỷ lệ sản phẩm lỗi', 'saigontech-v2'); ?>
                                 </div>
                             </div>
                         </div>
                         <div class="col-4">
                             <div class="sgtech-v2-result-card">
                                 <div class="sgtech-v2-metric">2 tỷ</div>
-                                <div class="small sgtech-v2-text-muted-foreground mt-1">VNĐ tiết kiệm/năm</div>
+                                <div class="small sgtech-v2-text-muted-foreground mt-1">
+                                    <?php _e('VNĐ tiết kiệm/năm', 'saigontech-v2'); ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -246,59 +235,71 @@ get_header(); ?>
     <section class="sgtech-v2-section-padding sgtech-v2-bg-section-light">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-6 fw-bold mb-3">Lĩnh vực phục vụ</h2>
-                <p class="sgtech-v2-text-muted-foreground mx-auto sgtech-v2-max-w-600">
-                    SGTech có kinh nghiệm triển khai dự án trong 8+ ngành nghề,
-                    từ bán lẻ, sản xuất đến y tế, giáo dục.
-                </p>
+                <h2 class="display-6 fw-bold mb-3"><?php _e('Lĩnh vực phục vụ', 'saigontech-v2'); ?></h2>
+                <?php _e('SGTech có kinh nghiệm triển khai dự án trong 8+ ngành nghề, từ bán lẻ, sản xuất đến y tế, giáo dục.', 'saigontech-v2'); ?>
             </div>
             <div class="row g-3">
                 <div class="col-6 col-md-3">
                     <div class="sgtech-v2-industry-card">
-                        <div class="sgtech-v2-name fw-semibold">Bất động sản</div>
-                        <div class="small sgtech-v2-text-muted-foreground">8 dự án</div>
+                        <div class="sgtech-v2-name fw-semibold"><?php _e('Bất động sản', 'saigontech-v2'); ?></div>
+                        <div class="small sgtech-v2-text-muted-foreground">
+                            <?php printf(__('%d dự án', 'saigontech-v2'), 8); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="sgtech-v2-industry-card">
-                        <div class="sgtech-v2-name fw-semibold">Bán lẻ & E-commerce</div>
-                        <div class="small sgtech-v2-text-muted-foreground">12 dự án</div>
+                        <div class="sgtech-v2-name fw-semibold"><?php _e('Bán lẻ & E-commerce', 'saigontech-v2'); ?>
+                        </div>
+                        <div class="small sgtech-v2-text-muted-foreground">
+                            <?php printf(__('%d dự án', 'saigontech-v2'), 12); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="sgtech-v2-industry-card">
-                        <div class="sgtech-v2-name fw-semibold">Sản xuất</div>
-                        <div class="small sgtech-v2-text-muted-foreground">6 dự án</div>
+                        <div class="sgtech-v2-name fw-semibold"><?php _e('Sản xuất', 'saigontech-v2'); ?></div>
+                        <div class="small sgtech-v2-text-muted-foreground">
+                            <?php printf(__('%d dự án', 'saigontech-v2'), 6); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="sgtech-v2-industry-card">
-                        <div class="sgtech-v2-name fw-semibold">Tài chính - Ngân hàng</div>
+                        <div class="sgtech-v2-name fw-semibold"><?php _e('Tài chính - Ngân hàng', 'saigontech-v2'); ?>
+                        </div>
                         <div class="small sgtech-v2-text-muted-foreground">5 dự án</div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="sgtech-v2-industry-card">
-                        <div class="sgtech-v2-name fw-semibold">Y tế</div>
-                        <div class="small sgtech-v2-text-muted-foreground">4 dự án</div>
+                        <div class="sgtech-v2-name fw-semibold"><?php _e('Y tế', 'saigontech-v2'); ?></div>
+                        <div class="small sgtech-v2-text-muted-foreground">
+                            <?php printf(__('%d dự án', 'saigontech-v2'), 4); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="sgtech-v2-industry-card">
-                        <div class="sgtech-v2-name fw-semibold">Giáo dục</div>
-                        <div class="small sgtech-v2-text-muted-foreground">7 dự án</div>
+                        <div class="sgtech-v2-name fw-semibold"><?php _e('Giáo dục', 'saigontech-v2'); ?></div>
+                        <div class="small sgtech-v2-text-muted-foreground">
+                            <?php printf(__('%d dự án', 'saigontech-v2'), 7); ?>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="sgtech-v2-industry-card">
-                        <div class="sgtech-v2-name fw-semibold">Logistics</div>
+                        <div class="sgtech-v2-name fw-semibold"><?php _e('Logistics', 'saigontech-v2'); ?></div>
                         <div class="small sgtech-v2-text-muted-foreground">5 dự án</div>
                     </div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="sgtech-v2-industry-card">
-                        <div class="sgtech-v2-name fw-semibold">Du lịch - Khách sạn</div>
-                        <div class="small sgtech-v2-text-muted-foreground">3 dự án</div>
+                        <div class="sgtech-v2-name fw-semibold"><?php _e('Du lịch - Khách sạn', 'saigontech-v2'); ?>
+                        </div>
+                        <div class="small sgtech-v2-text-muted-foreground">
+                            <?php printf(__('%d dự án', 'saigontech-v2'), 3); ?>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -311,19 +312,19 @@ get_header(); ?>
             <div class="row g-4 text-center">
                 <div class="col-6 col-md-3">
                     <div class="h2 fw-bold text-secondary mb-1">50+</div>
-                    <div class="opacity-75">Dự án hoàn thành</div>
+                    <div class="opacity-75"><?php _e('Dự án hoàn thành', 'saigontech-v2'); ?></div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="h2 fw-bold text-secondary mb-1">30+</div>
-                    <div class="opacity-75">Khách hàng tin tưởng</div>
+                    <div class="opacity-75"><?php _e('Khách hàng tin tưởng', 'saigontech-v2'); ?></div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="h2 fw-bold text-secondary mb-1">8+</div>
-                    <div class="opacity-75">Ngành nghề phục vụ</div>
+                    <div class="opacity-75"><?php _e('Ngành nghề phục vụ', 'saigontech-v2'); ?></div>
                 </div>
                 <div class="col-6 col-md-3">
                     <div class="h2 fw-bold text-secondary mb-1">98%</div>
-                    <div class="opacity-75">Khách hàng hài lòng</div>
+                    <div class="opacity-75"><?php _e('Khách hàng hài lòng', 'saigontech-v2'); ?></div>
                 </div>
             </div>
         </div>
@@ -333,18 +334,18 @@ get_header(); ?>
     <section class="sgtech-v2-section-padding">
         <div class="container">
             <div class="text-center mx-auto sgtech-v2-max-w-700">
-                <h2 class="display-6 fw-bold mb-3">Dự án của bạn sẽ là câu chuyện tiếp theo</h2>
-                <p class="sgtech-v2-text-muted-foreground fs-5 mb-4">
-                    Mỗi dự án đều bắt đầu từ một cuộc trò chuyện. Hãy chia sẻ với SGTech
-                    về bài toán của bạn, chúng tôi sẽ đề xuất giải pháp phù hợp nhất.
-                </p>
+                <h2 class="display-6 fw-bold mb-3">
+                    <?php _e('Dự án của bạn sẽ là câu chuyện tiếp theo', 'saigontech-v2'); ?>
+                </h2>
+                <?php _e('Mỗi dự án đều bắt đầu từ một cuộc trò chuyện. Hãy chia sẻ với SGTech về bài toán của bạn, chúng tôi sẽ đề xuất giải pháp phù hợp nhất.', 'saigontech-v2'); ?>
                 <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                    <a href="<?php echo home_url('/lien-he'); ?>" class="btn btn-secondary btn-lg sgtech-v2-shadow-lg">
-                        Bắt đầu dự án của bạn
+                    <a href="<?php echo sgtech_get_page_url('lien-he'); ?>"
+                        class="btn btn-secondary btn-lg sgtech-v2-shadow-lg">
+                        <?php _e('Bắt đầu dự án của bạn', 'saigontech-v2'); ?>
                         <i class="bi bi-arrow-right ms-2"></i>
                     </a>
-                    <a href="<?php echo home_url('/dich-vu'); ?>" class="btn btn-outline-primary btn-lg">Tìm hiểu dịch
-                        vụ</a>
+                    <a href="<?php echo sgtech_get_page_url('dich-vu'); ?>"
+                        class="btn btn-outline-primary btn-lg"><?php _e('Tìm hiểu dịch vụ', 'saigontech-v2'); ?></a>
                 </div>
             </div>
         </div>

@@ -7,12 +7,12 @@ get_header(); ?>
 <main class="d-flex align-items-center min-vh-100">
     <div class="container text-center py-5">
         <div class="display-1 fw-bold text-primary mb-3">404</div>
-        <h1 class="h3 fw-bold mb-3">Trang không tìm thấy</h1>
-        <p class="sgtech-v2-text-muted-foreground mb-4">Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã được di
-            chuyển.
+        <h1 class="h3 fw-bold mb-3"><?php _e('Trang không tìm thấy', 'saigontech-v2'); ?></h1>
+        <p class="sgtech-v2-text-muted-foreground mb-4">
+            <?php _e('Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển.', 'saigontech-v2'); ?>
         </p>
         <a href="<?php echo home_url('/'); ?>" class="btn btn-secondary btn-lg">
-            <i class="bi bi-house me-2"></i>Về trang chủ
+            <i class="bi bi-house me-2"></i><?php _e('Về trang chủ', 'saigontech-v2'); ?>
         </a>
     </div>
 </main>

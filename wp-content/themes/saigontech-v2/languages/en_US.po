@@ -1,0 +1,1423 @@
+# English translation for saigontech-v2 theme
+# Complete translation file with ALL strings
+msgid ""
+msgstr ""
+"Project-Id-Version: saigontech-v2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-07 14:39+0700\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+# 404 page
+#: wp-content/themes/saigontech-v2/404.php:10
+msgid "Trang không tìm thấy"
+msgstr "Page Not Found"
+
+#: wp-content/themes/saigontech-v2/404.php:12
+msgid "Xin lỗi, trang bạn đang tìm kiếm không tồn tại hoặc đã được di chuyển."
+msgstr "Sorry, the page you are looking for does not exist or has been moved."
+
+#: wp-content/themes/saigontech-v2/404.php:15
+msgid "Về trang chủ"
+msgstr "Back to Home"
+
+# Footer
+#: wp-content/themes/saigontech-v2/footer.php:11
+msgid ""
+"Đối tác công nghệ tin cậy cho doanh nghiệp Việt. Chúng tôi mang đến giải "
+"pháp phần mềm chất lượng cao, giúp doanh nghiệp tối ưu hóa quy trình và phát "
+"triển bền vững."
+msgstr ""
+"Trusted technology partner for Vietnamese enterprises. We deliver high-"
+"quality software solutions, helping businesses optimize processes and "
+"achieve sustainable growth."
+
+#: wp-content/themes/saigontech-v2/footer.php:22
+msgid "Điều hướng"
+msgstr "Navigation"
+
+#: wp-content/themes/saigontech-v2/footer.php:24
+#: wp-content/themes/saigontech-v2/header.php:51
+msgid "Trang chủ"
+msgstr "Home"
+
+#: wp-content/themes/saigontech-v2/footer.php:26
+#: wp-content/themes/saigontech-v2/header.php:55
+msgid "Về chúng tôi"
+msgstr "About Us"
+
+#: wp-content/themes/saigontech-v2/footer.php:28
+#: wp-content/themes/saigontech-v2/footer.php:37
+#: wp-content/themes/saigontech-v2/header.php:59
+msgid "Dịch vụ"
+msgstr "Services"
+
+#: wp-content/themes/saigontech-v2/footer.php:29
+#: wp-content/themes/saigontech-v2/header.php:63
+msgid "Dự án"
+msgstr "Projects"
+
+#: wp-content/themes/saigontech-v2/footer.php:31
+#: wp-content/themes/saigontech-v2/footer.php:52
+#: wp-content/themes/saigontech-v2/header.php:71
+msgid "Liên hệ"
+msgstr "Contact"
+
+#: wp-content/themes/saigontech-v2/footer.php:40
+#: wp-content/themes/saigontech-v2/front-page.php:196
+msgid "Phát triển phần mềm"
+msgstr "Software Development"
+
+#: wp-content/themes/saigontech-v2/footer.php:42
+#: wp-content/themes/saigontech-v2/front-page.php:212
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:109
+msgid "Tư vấn chuyển đổi số"
+msgstr "Digital Transformation Consulting"
+
+#: wp-content/themes/saigontech-v2/footer.php:44
+#: wp-content/themes/saigontech-v2/front-page.php:228
+msgid "Giải pháp SaaS"
+msgstr "SaaS Solutions"
+
+#: wp-content/themes/saigontech-v2/footer.php:46
+#: wp-content/themes/saigontech-v2/front-page.php:244
+msgid "Bảo trì & Hỗ trợ"
+msgstr "Maintenance & Support"
+
+#: wp-content/themes/saigontech-v2/footer.php:65
+msgid "103, Building 8, Quang Trung Software City, HCM City, VietNam"
+msgstr "103, Building 8, Quang Trung Software City, HCM City, Vietnam"
+
+#: wp-content/themes/saigontech-v2/footer.php:76
+#, php-format
+msgid "© %s SGTech. Tất cả quyền được bảo lưu."
+msgstr "© %s SGTech. All rights reserved."
+
+#: wp-content/themes/saigontech-v2/footer.php:78
+msgid "Chính sách bảo mật"
+msgstr "Privacy Policy"
+
+#: wp-content/themes/saigontech-v2/footer.php:79
+msgid "Điều khoản sử dụng"
+msgstr "Terms of Use"
+
+# Services page - Feature highlights
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:52
+msgid "Tính năng nổi bật"
+msgstr "Key Features"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:54
+msgid "Những gì bạn sẽ nhận được khi sử dụng dịch vụ"
+msgstr "What you will get when using this service"
+
+# Projects page - Challenge and Solution
+#: wp-content/themes/saigontech-v2/page-du-an.php:57
+msgid "Thách thức"
+msgstr "Challenge"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:61
+msgid "Giải pháp SGTech"
+msgstr "SGTech Solution"
+
+# Front page - Hero
+#: wp-content/themes/saigontech-v2/front-page.php:9
+msgid "SGTech - Đội ngũ phát triển phần mềm"
+msgstr "SGTech - Software Development Team"
+
+#: wp-content/themes/saigontech-v2/front-page.php:18
+msgid "Đối tác công nghệ hàng đầu"
+msgstr "Leading Technology Partner"
+
+#: wp-content/themes/saigontech-v2/front-page.php:21
+#, php-format
+msgid "Kiến tạo giải pháp số cho %s"
+msgstr "Creating digital solutions for %s"
+
+#: wp-content/themes/saigontech-v2/front-page.php:21
+msgid "doanh nghiệp Việt"
+msgstr "Vietnamese Enterprises"
+
+#: wp-content/themes/saigontech-v2/front-page.php:24
+msgid ""
+"SGTech đồng hành cùng hơn 50 doanh nghiệp trong hành trình chuyển đổi số, "
+"mang đến giải pháp phần mềm chất lượng cao, tối ưu chi phí và thời gian."
+msgstr ""
+"SGTech has accompanied over 50 enterprises on their digital transformation "
+"journey, delivering high-quality software solutions that optimize costs and "
+"time."
+
+#: wp-content/themes/saigontech-v2/front-page.php:28
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:475
+#: wp-content/themes/saigontech-v2/single.php:170
+msgid "Nhận tư vấn miễn phí"
+msgstr "Get Free Consultation"
+
+#: wp-content/themes/saigontech-v2/front-page.php:32
+msgid "Xem dự án đã thực hiện"
+msgstr "View Our Projects"
+
+#: wp-content/themes/saigontech-v2/front-page.php:51
+#: wp-content/themes/saigontech-v2/front-page.php:276
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:63
+msgid "Năm kinh nghiệm"
+msgstr "Years of Experience"
+
+#: wp-content/themes/saigontech-v2/front-page.php:53
+msgid "Trong ngành CNTT"
+msgstr "In IT Industry"
+
+#: wp-content/themes/saigontech-v2/front-page.php:63
+#: wp-content/themes/saigontech-v2/page-du-an.php:297
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:208
+msgid "Dự án hoàn thành"
+msgstr "Completed Projects"
+
+#: wp-content/themes/saigontech-v2/front-page.php:65
+msgid "Đa dạng lĩnh vực"
+msgstr "Diverse Industries"
+
+#: wp-content/themes/saigontech-v2/front-page.php:75
+msgid "Khách hàng"
+msgstr "Clients"
+
+#: wp-content/themes/saigontech-v2/front-page.php:76
+msgid "Tin tưởng hợp tác"
+msgstr "Trust & Partnership"
+
+#: wp-content/themes/saigontech-v2/front-page.php:86
+msgid "Hài lòng"
+msgstr "Satisfaction"
+
+#: wp-content/themes/saigontech-v2/front-page.php:87
+msgid "Tỷ lệ khách hàng"
+msgstr "Client Rate"
+
+#: wp-content/themes/saigontech-v2/front-page.php:100
+msgid "Được tin tưởng bởi các doanh nghiệp hàng đầu"
+msgstr "Trusted by Leading Enterprises"
+
+# Services section
+#: wp-content/themes/saigontech-v2/front-page.php:172
+msgid "Giải pháp toàn diện"
+msgstr "Comprehensive Solutions"
+
+#: wp-content/themes/saigontech-v2/front-page.php:174
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:21
+msgid "Dịch vụ của SGTech"
+msgstr "SGTech Services"
+
+#: wp-content/themes/saigontech-v2/front-page.php:176
+msgid ""
+"Từ ý tưởng đến sản phẩm hoàn chỉnh, chúng tôi cung cấp đầy đủ dịch vụ công "
+"nghệ cho doanh nghiệp của bạn."
+msgstr ""
+"From idea to finished product, we provide complete technology services for "
+"your business."
+
+#: wp-content/themes/saigontech-v2/front-page.php:179
+msgid "Tìm hiểu chi tiết"
+msgstr "Learn More"
+
+#: wp-content/themes/saigontech-v2/front-page.php:198
+msgid ""
+"Xây dựng ứng dụng web, mobile và hệ thống quản lý doanh nghiệp theo yêu cầu "
+"riêng."
+msgstr ""
+"Building custom web, mobile applications and enterprise management systems."
+
+#: wp-content/themes/saigontech-v2/front-page.php:214
+msgid "Chiến lược và lộ trình số hóa toàn diện, phù hợp với từng ngành nghề."
+msgstr "Comprehensive digitalization strategy and roadmap, tailored to each industry."
+"Comprehensive digitalization strategy and roadmap, tailored to each industry."
+
+#: wp-content/themes/saigontech-v2/front-page.php:230
+msgid ""
+"Nền tảng phần mềm đám mây sẵn sàng triển khai, tiết kiệm chi phí đầu tư."
+msgstr ""
+"Cloud software platforms ready for deployment, saving investment costs."
+
+#: wp-content/themes/saigontech-v2/front-page.php:246
+msgid "Dịch vụ hỗ trợ kỹ thuật 24/7, đảm bảo hệ thống vận hành liên tục."
+msgstr "24/7 technical support services, ensuring continuous system operation."
+
+# About section
+#: wp-content/themes/saigontech-v2/front-page.php:266
+msgid "Đội ngũ SGTech trong buổi họp dự án"
+msgstr "SGTech team during project meeting"
+
+#: wp-content/themes/saigontech-v2/front-page.php:284
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:17
+msgid "Về SGTech"
+msgstr "About SGTech"
+
+#: wp-content/themes/saigontech-v2/front-page.php:285
+msgid "Đối tác công nghệ đáng tin cậy"
+msgstr "Trusted Technology Partner"
+
+#: wp-content/themes/saigontech-v2/front-page.php:287
+msgid ""
+"Thành lập từ năm 2014, SGTech đã phát triển từ một đội ngũ nhỏ 5 thành viên "
+"thành công ty công nghệ với hơn 15 chuyên gia. Chúng tôi tự hào đã hoàn "
+"thành hơn 150 dự án trong đa dạng lĩnh vực."
+msgstr ""
+"Founded in 2014, SGTech has grown from a small team of 5 members into a "
+"technology company with over 15 experts. We are proud to have completed more "
+"than 150 projects across diverse industries."
+
+#: wp-content/themes/saigontech-v2/front-page.php:294
+msgid "Đội ngũ kỹ sư giàu kinh nghiệm, am hiểu nghiệp vụ"
+msgstr "Experienced engineering team with deep business understanding"
+
+#: wp-content/themes/saigontech-v2/front-page.php:300
+msgid "Quy trình Agile linh hoạt, báo cáo minh bạch"
+msgstr "Flexible Agile process with transparent reporting"
+
+#: wp-content/themes/saigontech-v2/front-page.php:306
+msgid "Hỗ trợ kỹ thuật 24/7 sau bàn giao"
+msgstr "24/7 technical support after handover"
+
+#: wp-content/themes/saigontech-v2/front-page.php:312
+msgid "Cam kết bảo mật thông tin tuyệt đối"
+msgstr "Absolute commitment to information security"
+
+#: wp-content/themes/saigontech-v2/front-page.php:316
+msgid "Tìm hiểu về SGTech"
+msgstr "Learn About SGTech"
+
+# Testimonials
+#: wp-content/themes/saigontech-v2/front-page.php:330
+msgid "Khách hàng nói gì"
+msgstr "What Clients Say"
+
+#: wp-content/themes/saigontech-v2/front-page.php:332
+msgid "Phản hồi từ đối tác"
+msgstr "Partner Feedback"
+
+#: wp-content/themes/saigontech-v2/front-page.php:334
+msgid ""
+"Sự tin tưởng và hài lòng của khách hàng là thước đo thành công của chúng tôi."
+msgstr "Client trust and satisfaction is our measure of success."
+
+#: wp-content/themes/saigontech-v2/front-page.php:345
+msgid ""
+"\"SGTech đã giúp chúng tôi xây dựng hệ thống ERP hoàn chỉnh trong 6 tháng. "
+"Đội ngũ rất chuyên nghiệp và hiểu rõ nghiệp vụ doanh nghiệp.\""
+msgstr ""
+"\"SGTech helped us build a complete ERP system in 6 months. The team is very "
+"professional and understands business operations well.\""
+
+#: wp-content/themes/saigontech-v2/front-page.php:353
+msgid "Công ty TNHH Thương mại ABC"
+msgstr "ABC Trading Company"
+
+#: wp-content/themes/saigontech-v2/front-page.php:367
+msgid ""
+"\"Ứng dụng quản lý bất động sản do SGTech phát triển đã tăng hiệu suất làm "
+"việc lên 40%. Rất ấn tượng với chất lượng sản phẩm.\""
+msgstr ""
+"\"The real estate management application developed by SGTech increased work "
+"efficiency by 40%. Very impressed with the product quality.\""
+
+#: wp-content/themes/saigontech-v2/front-page.php:374
+msgid "Giám đốc Vận hành"
+msgstr "Operations Director"
+
+#: wp-content/themes/saigontech-v2/front-page.php:375
+msgid "Tập đoàn Bất động sản XYZ"
+msgstr "XYZ Real Estate Corporation"
+
+#: wp-content/themes/saigontech-v2/front-page.php:388
+msgid ""
+"\"Giải pháp IoT của SGTech giúp giảm 30% thời gian downtime máy móc. Đội ngũ "
+"hỗ trợ 24/7 rất nhiệt tình và phản hồi nhanh.\""
+msgstr ""
+"\"SGTech's IoT solution helped reduce machine downtime by 30%. The 24/7 "
+"support team is very enthusiastic and responsive.\""
+
+#: wp-content/themes/saigontech-v2/front-page.php:395
+msgid "Giám đốc CNTT"
+msgstr "IT Director"
+
+#: wp-content/themes/saigontech-v2/front-page.php:396
+msgid "Công ty Sản xuất Delta"
+msgstr "Delta Manufacturing Company"
+
+# Technology stack
+#: wp-content/themes/saigontech-v2/front-page.php:410
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:400
+msgid "Công nghệ chúng tôi sử dụng"
+msgstr "Technologies We Use"
+
+#: wp-content/themes/saigontech-v2/front-page.php:411
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:402
+msgid "Stack công nghệ hiện đại, phù hợp với từng loại dự án"
+msgstr "Modern technology stack, suitable for each project type"
+
+# Blog section
+#: wp-content/themes/saigontech-v2/front-page.php:484
+msgid "Tin tức & Blog"
+msgstr "News & Blog"
+
+#: wp-content/themes/saigontech-v2/front-page.php:486
+msgid "Cập nhật từ SGTech"
+msgstr "Updates from SGTech"
+
+#: wp-content/themes/saigontech-v2/front-page.php:488
+msgid ""
+"Chia sẻ kiến thức, xu hướng công nghệ và câu chuyện thành công từ các dự án "
+"thực tế."
+msgstr ""
+"Sharing knowledge, technology trends and success stories from real projects."
+
+#: wp-content/themes/saigontech-v2/front-page.php:492
+msgid "Xem tất cả bài viết"
+msgstr "View All Posts"
+
+#: wp-content/themes/saigontech-v2/front-page.php:504
+#: wp-content/themes/saigontech-v2/front-page.php:512
+msgid "5 xu hướng chuyển đổi số doanh nghiệp năm 2025"
+msgstr "5 Digital Transformation Trends for Enterprises in 2025"
+
+#: wp-content/themes/saigontech-v2/front-page.php:508
+#: wp-content/themes/saigontech-v2/page-blog.php:46
+msgid "Chuyển đổi số"
+msgstr "Digital Transformation"
+
+#: wp-content/themes/saigontech-v2/front-page.php:509
+#: wp-content/themes/saigontech-v2/front-page.php:537
+#: wp-content/themes/saigontech-v2/front-page.php:564
+#: wp-content/themes/saigontech-v2/page-blog.php:162
+#: wp-content/themes/saigontech-v2/page-blog.php:215
+#: wp-content/themes/saigontech-v2/single.php:47
+#, php-format
+msgid "%d phút đọc"
+msgstr "%d min read"
+
+#: wp-content/themes/saigontech-v2/front-page.php:516
+msgid ""
+"Khám phá những công nghệ và chiến lược chuyển đổi số đang định hình tương "
+"lai doanh nghiệp Việt Nam."
+msgstr ""
+"Discover the technologies and digital transformation strategies shaping the "
+"future of Vietnamese enterprises."
+
+#: wp-content/themes/saigontech-v2/front-page.php:532
+#: wp-content/themes/saigontech-v2/front-page.php:540
+msgid "Case Study: Tối ưu quy trình sản xuất với IoT"
+msgstr "Case Study: Optimizing Manufacturing Process with IoT"
+
+#: wp-content/themes/saigontech-v2/front-page.php:536
+#: wp-content/themes/saigontech-v2/page-blog.php:47
+msgid "Case Study"
+msgstr "Case Study"
+
+#: wp-content/themes/saigontech-v2/front-page.php:544
+msgid ""
+"Cách SGTech giúp doanh nghiệp sản xuất giảm 30% thời gian downtime với giải "
+"pháp IoT tích hợp."
+msgstr ""
+"How SGTech helped a manufacturing company reduce 30% downtime with "
+"integrated IoT solution."
+
+#: wp-content/themes/saigontech-v2/front-page.php:559
+#: wp-content/themes/saigontech-v2/front-page.php:567
+msgid "Bảo mật dữ liệu: Những điều doanh nghiệp cần biết"
+msgstr "Data Security: What Enterprises Need to Know"
+
+#: wp-content/themes/saigontech-v2/front-page.php:563
+#: wp-content/themes/saigontech-v2/page-blog.php:48
+msgid "Bảo mật"
+msgstr "Security"
+
+#: wp-content/themes/saigontech-v2/front-page.php:571
+msgid ""
+"Hướng dẫn toàn diện về bảo mật thông tin cho doanh nghiệp vừa và nhỏ trong "
+"thời đại số."
+msgstr ""
+"Comprehensive guide to information security for SMEs in the digital age."
+
+# CTA section
+#: wp-content/themes/saigontech-v2/front-page.php:590
+msgid "Sẵn sàng nâng tầm doanh nghiệp của bạn?"
+msgstr "Ready to Elevate Your Business?"
+
+#: wp-content/themes/saigontech-v2/front-page.php:592
+msgid ""
+"Liên hệ ngay với SGTech để được tư vấn miễn phí. Chúng tôi sẽ phân tích nhu "
+"cầu và đề xuất giải pháp phù hợp nhất cho doanh nghiệp của bạn."
+msgstr ""
+"Contact SGTech now for free consultation. We will analyze your needs and "
+"propose the most suitable solution for your business."
+
+#: wp-content/themes/saigontech-v2/front-page.php:596
+msgid "Đặt lịch tư vấn"
+msgstr "Schedule Consultation"
+
+#: wp-content/themes/saigontech-v2/front-page.php:601
+msgid "Hotline: 0986 758 048"
+msgstr "Hotline: 0986 758 048"
+
+#: wp-content/themes/saigontech-v2/functions.php:44
+msgid "Primary Menu"
+msgstr "Primary Menu"
+
+#: wp-content/themes/saigontech-v2/functions.php:45
+msgid "Footer Menu"
+msgstr "Footer Menu"
+
+# Header
+#: wp-content/themes/saigontech-v2/header.php:8
+msgid ""
+"SGTech - Đối tác công nghệ tin cậy cho doanh nghiệp Việt. Cung cấp giải pháp "
+"phần mềm chất lượng cao, tối ưu chi phí và thời gian."
+msgstr ""
+"SGTech - Trusted technology partner for Vietnamese enterprises. Providing "
+"high-quality software solutions, optimizing costs and time."
+
+#: wp-content/themes/saigontech-v2/header.php:67
+msgid "Blog"
+msgstr "Blog"
+
+#: wp-content/themes/saigontech-v2/header.php:80
+#: wp-content/themes/saigontech-v2/single.php:174
+msgid "Liên hệ ngay"
+msgstr "Contact Now"
+
+#: wp-content/themes/saigontech-v2/index.php:17
+msgid "Sorry, no posts matched your criteria."
+msgstr "Sorry, no posts matched your criteria."
+
+# Blog page
+#: wp-content/themes/saigontech-v2/page-blog.php:13
+msgid "Blog & Tin tức"
+msgstr "Blog & News"
+
+#: wp-content/themes/saigontech-v2/page-blog.php:15
+msgid ""
+"Cập nhật kiến thức công nghệ, xu hướng chuyển đổi số và câu chuyện thành "
+"công từ các dự án thực tế của SGTech."
+msgstr ""
+"Stay updated with technology knowledge, digital transformation trends and "
+"success stories from SGTech's real projects."
+
+#: wp-content/themes/saigontech-v2/page-blog.php:35
+msgid "Tìm kiếm bài viết..."
+msgstr "Search posts..."
+
+#: wp-content/themes/saigontech-v2/page-blog.php:38
+msgid "Tìm"
+msgstr "Search"
+
+#: wp-content/themes/saigontech-v2/page-blog.php:45
+msgid "Tất cả"
+msgstr "All"
+
+#: wp-content/themes/saigontech-v2/page-blog.php:49
+msgid "Công nghệ"
+msgstr "Technology"
+
+#: wp-content/themes/saigontech-v2/page-blog.php:148
+msgid "Bài viết nổi bật"
+msgstr "Featured Post"
+
+#: wp-content/themes/saigontech-v2/page-blog.php:184
+msgid "Kết quả tìm kiếm"
+msgstr "Search Results"
+
+#: wp-content/themes/saigontech-v2/page-blog.php:186
+msgid "Bài viết mới nhất"
+msgstr "Latest Posts"
+
+#: wp-content/themes/saigontech-v2/page-blog.php:253
+msgid "Trước"
+msgstr "Previous"
+
+#: wp-content/themes/saigontech-v2/page-blog.php:254
+msgid "Sau"
+msgstr "Next"
+
+#: wp-content/themes/saigontech-v2/page-blog.php:282
+msgid "Chưa có bài viết nào."
+msgstr "No posts found."
+
+#: wp-content/themes/saigontech-v2/page-blog.php:291
+msgid "Cần tư vấn về giải pháp công nghệ?"
+msgstr "Need Tech Solution Consultation?"
+
+#: wp-content/themes/saigontech-v2/page-blog.php:293
+msgid ""
+"Đội ngũ chuyên gia SGTech sẵn sàng hỗ trợ bạn tìm ra giải pháp phù hợp nhất."
+msgstr ""
+"SGTech's expert team is ready to help you find the most suitable solution."
+
+#: wp-content/themes/saigontech-v2/page-blog.php:296
+msgid "Liên hệ tư vấn"
+msgstr "Contact for Consultation"
+
+# Services page
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:12
+msgid "SGTech - Dịch vụ phát triển phần mềm"
+msgstr "SGTech - Software Development Services"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:19
+msgid "End-to-end Solutions"
+msgstr "End-to-end Solutions"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:23
+msgid ""
+"Từ tư vấn chiến lược đến phát triển và vận hành, SGTech cung cấp đầy đủ giải "
+"pháp công nghệ cho mọi giai đoạn của doanh nghiệp."
+msgstr ""
+"From strategic consulting to development and operations, SGTech provides "
+"complete technology solutions for every stage of business."
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:38
+msgid "Phát triển phần mềm theo yêu cầu"
+msgstr "Custom Software Development"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:40
+msgid ""
+"Xây dựng giải pháp phần mềm tùy chỉnh hoàn toàn dựa trên nhu cầu cụ thể của "
+"doanh nghiệp, từ ứng dụng web, mobile đến hệ thống quản lý doanh nghiệp."
+msgstr ""
+"Building fully customized software solutions based on specific business "
+"needs, from web and mobile applications to enterprise management systems."
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:43
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:114
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:186
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:259
+msgid "Yêu cầu tư vấn"
+msgstr "Request Consultation"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:64
+msgid "Ứng dụng web responsive, tối ưu SEO"
+msgstr "Responsive web applications, SEO optimized"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:70
+msgid "Ứng dụng mobile iOS và Android"
+msgstr "iOS and Android mobile applications"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:77
+msgid "Hệ thống ERP, CRM tùy chỉnh"
+msgstr "Custom ERP and CRM systems"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:83
+msgid "Tích hợp API và hệ thống bên thứ ba"
+msgstr "API and third-party system integration"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:89
+msgid "Kiến trúc microservices hiện đại"
+msgstr "Modern microservices architecture"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:95
+msgid "Bảo mật và hiệu năng cao"
+msgstr "High security and performance"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:111
+msgid ""
+"Đồng hành cùng doanh nghiệp trong hành trình số hóa với chiến lược và lộ "
+"trình rõ ràng, phù hợp với đặc thù ngành nghề và quy mô hoạt động."
+msgstr ""
+"Accompanying businesses on their digitalization journey with clear strategy "
+"and roadmap, tailored to industry specifics and operational scale."
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:136
+msgid "Đánh giá hiện trạng công nghệ"
+msgstr "Technology assessment"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:142
+msgid "Xây dựng chiến lược chuyển đổi số"
+msgstr "Digital transformation strategy development"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:148
+msgid "Thiết kế lộ trình triển khai chi tiết"
+msgstr "Detailed implementation roadmap design"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:154
+msgid "Tư vấn lựa chọn công nghệ phù hợp"
+msgstr "Technology selection consulting"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:160
+msgid "Đào tạo và chuyển giao kiến thức"
+msgstr "Training and knowledge transfer"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:167
+msgid "Hỗ trợ quản lý thay đổi tổ chức"
+msgstr "Organizational change management support"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:181
+msgid "Giải pháp SaaS cho doanh nghiệp"
+msgstr "SaaS Solutions for Enterprises"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:183
+msgid ""
+"Nền tảng phần mềm đám mây sẵn sàng sử dụng, linh hoạt mở rộng theo nhu cầu, "
+"giúp doanh nghiệp tiết kiệm chi phí đầu tư ban đầu."
+msgstr ""
+"Ready-to-use cloud software platforms, flexibly scalable as needed, helping "
+"businesses save initial investment costs."
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:208
+msgid "Triển khai nhanh chóng, không cần cài đặt"
+msgstr "Quick deployment, no installation required"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:214
+msgid "Cập nhật tự động, luôn có phiên bản mới"
+msgstr "Automatic updates, always have the latest version"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:221
+msgid "Thanh toán linh hoạt theo nhu cầu"
+msgstr "Flexible payment based on needs"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:228
+msgid "Bảo mật dữ liệu tiêu chuẩn quốc tế"
+msgstr "International standard data security"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:234
+msgid "Tích hợp dễ dàng với hệ thống hiện có"
+msgstr "Easy integration with existing systems"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:240
+msgid "Hỗ trợ đa nền tảng và thiết bị"
+msgstr "Multi-platform and device support"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:254
+msgid "Bảo trì & Hỗ trợ kỹ thuật"
+msgstr "Maintenance & Technical Support"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:256
+msgid ""
+"Dịch vụ hỗ trợ toàn diện đảm bảo hệ thống vận hành ổn định 24/7, nhanh chóng "
+"xử lý sự cố và cập nhật bảo mật thường xuyên."
+msgstr ""
+"Comprehensive support services ensuring stable 24/7 system operation, quick "
+"incident handling and regular security updates."
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:280
+msgid "Hỗ trợ kỹ thuật 24/7"
+msgstr "24/7 Technical Support"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:287
+msgid "Giám sát hệ thống liên tục"
+msgstr "Continuous system monitoring"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:293
+msgid "Cập nhật bảo mật định kỳ"
+msgstr "Regular security updates"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:300
+msgid "Sao lưu và phục hồi dữ liệu"
+msgstr "Data backup and recovery"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:307
+msgid "Tối ưu hóa hiệu năng hệ thống"
+msgstr "System performance optimization"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:314
+msgid "Báo cáo và phân tích định kỳ"
+msgstr "Regular reports and analysis"
+
+# Process section
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:330
+msgid "Quy trình chuyên nghiệp"
+msgstr "Professional Process"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:332
+msgid "Cách SGTech làm việc"
+msgstr "How SGTech Works"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:334
+msgid ""
+"Quy trình 4 bước rõ ràng, minh bạch, đảm bảo dự án được hoàn thành đúng tiến "
+"độ và chất lượng."
+msgstr ""
+"Clear and transparent 4-step process, ensuring projects are completed on "
+"schedule and with quality."
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:343
+msgid "Khám phá & Phân tích"
+msgstr "Discovery & Analysis"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:345
+msgid "Lắng nghe, tìm hiểu sâu về nghiệp vụ và xác định rõ mục tiêu dự án"
+msgstr "Listening, deeply understanding business operations, and clearly defining project goals."
+"Listening, deep understanding of business and clearly defining project "
+"objectives"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:348
+msgid "Workshop với stakeholders, phân tích yêu cầu, nghiên cứu thị trường"
+msgstr "Stakeholder workshops, requirements analysis, market research"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:357
+msgid "Thiết kế & Đề xuất"
+msgstr "Design & Proposal"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:359
+msgid "Đề xuất giải pháp tối ưu, thiết kế UI/UX và kiến trúc hệ thống"
+msgstr "Proposing optimal solutions, UI/UX design and system architecture"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:362
+msgid "Wireframe, Prototype, Technical Architecture, Báo giá chi tiết"
+msgstr "Wireframe, Prototype, Technical Architecture, Detailed Quote"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:371
+msgid "Phát triển & Kiểm thử"
+msgstr "Development & Testing"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:373
+msgid "Xây dựng sản phẩm theo phương pháp Agile, demo thường xuyên"
+msgstr "Building products using Agile methodology, regular demos"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:376
+msgid "Sprint 2 tuần, Demo sau mỗi sprint, QA song song"
+msgstr "2-week sprints, Demo after each sprint, Parallel QA"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:384
+msgid "Triển khai & Đào tạo"
+msgstr "Deployment & Training"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:386
+msgid "Go-live an toàn, đào tạo người dùng và chuyển giao tài liệu"
+msgstr "Safe go-live, user training and documentation handover"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:389
+msgid "UAT, Go-live, Training, Documentation, Warranty"
+msgstr "UAT, Go-live, Training, Documentation, Warranty"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:469
+msgid "Bạn cần giải pháp công nghệ?"
+msgstr "Need a Technology Solution?"
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:471
+msgid ""
+"Dù bạn đang bắt đầu chuyển đổi số hay cần nâng cấp hệ thống hiện có, SGTech "
+"sẵn sàng lắng nghe và đề xuất giải pháp tối ưu."
+msgstr ""
+"Whether you're starting digital transformation or need to upgrade existing "
+"systems, SGTech is ready to listen and propose optimal solutions."
+
+#: wp-content/themes/saigontech-v2/page-dich-vu.php:479
+msgid "Xem dự án mẫu"
+msgstr "View Sample Projects"
+
+# Projects page
+#: wp-content/themes/saigontech-v2/page-du-an.php:14
+msgid "Kết quả thực tế"
+msgstr "Real Results"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:16
+msgid "Dự án tiêu biểu"
+msgstr "Featured Projects"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:17
+msgid ""
+"Mỗi dự án là một câu chuyện về sự hợp tác, sáng tạo và cam kết mang lại giá "
+"trị thực sự cho khách hàng."
+msgstr ""
+"Each project is a story of collaboration, creativity and commitment to "
+"delivering real value to customers."
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:33
+#: wp-content/themes/saigontech-v2/page-du-an.php:232
+msgid "Bất động sản"
+msgstr "Real Estate"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:38
+msgid "PropTech Manager - Hệ thống quản lý BĐS"
+msgstr "PropTech Manager - Real Estate Management System"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:43
+msgid "Công ty CP Địa ốc ABC"
+msgstr "ABC Real Estate Corporation"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:47
+msgid "8 tháng"
+msgstr "8 months"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:58
+msgid ""
+"Khách hàng đang sử dụng nhiều công cụ rời rạc (Excel, Google Sheets, CRM "
+"riêng) để quản lý quỹ căn hộ, khách hàng tiềm năng và hợp đồng bán hàng. "
+"Việc này gây mất thời gian, dễ sai sót và khó theo dõi báo cáo."
+msgstr ""
+"The client was using multiple disconnected tools (Excel, Google Sheets, "
+"separate CRM) to manage apartment inventory, leads and sales contracts. This "
+"caused time loss, errors and difficulty tracking reports."
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:62
+msgid ""
+"SGTech phát triển nền tảng PropTech Manager toàn diện với các module: Quỹ "
+"sản phẩm (5,000+ căn), CRM khách hàng, Quản lý hợp đồng điện tử, Dashboard "
+"báo cáo real-time. Tích hợp với hệ thống kế toán và marketing automation."
+msgstr ""
+"SGTech developed a comprehensive PropTech Manager platform with modules: "
+"Product inventory (5,000+ units), Customer CRM, Electronic contract "
+"management, Real-time reporting dashboard. Integrated with accounting and "
+"marketing automation systems."
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:69
+msgid "Giảm thời gian xử lý giao dịch"
+msgstr "Reduced transaction processing time"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:76
+msgid "Tăng tỷ lệ chuyển đổi khách hàng"
+msgstr "Increased customer conversion rate"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:83
+msgid "Căn hộ quản lý trên một nền tảng"
+msgstr "Apartments managed on one platform"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:98
+msgid "Bán lẻ"
+msgstr "Retail"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:103
+msgid "OmniMart - Nền tảng E-commerce đa kênh"
+msgstr "OmniMart - Multi-channel E-commerce Platform"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:108
+msgid "Chuỗi siêu thị XYZ Mart"
+msgstr "XYZ Mart Supermarket Chain"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:112
+msgid "6 tháng"
+msgstr "6 months"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:123
+msgid ""
+"Chuỗi 15 cửa hàng cần mở rộng kênh bán online nhưng gặp khó khăn trong việc "
+"đồng bộ tồn kho real-time với hệ thống POS hiện có. Khách hàng thường xuyên "
+"đặt hàng những sản phẩm đã hết."
+msgstr ""
+"A chain of 15 stores needed to expand online sales but faced difficulties "
+"syncing real-time inventory with existing POS systems. Customers frequently "
+"ordered out-of-stock products."
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:127
+msgid ""
+"Xây dựng nền tảng e-commerce OmniMart với: Website responsive + App mobile, "
+"tích hợp 2-way sync với POS, hệ thống Click & Collect, chương trình loyalty "
+"tích điểm, thanh toán đa phương thức."
+msgstr ""
+"Built OmniMart e-commerce platform with: Responsive website + Mobile app, 2-"
+"way sync with POS integration, Click & Collect system, loyalty points "
+"program, multi-payment methods."
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:134
+msgid "Thời gian go-live từ ý tưởng"
+msgstr "Time from idea to go-live"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:141
+msgid "Đơn hàng/tháng sau 3 tháng"
+msgstr "Orders/month after 3 months"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:148
+msgid "Độ chính xác đồng bộ kho"
+msgstr "Inventory sync accuracy"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:163
+#: wp-content/themes/saigontech-v2/page-du-an.php:247
+msgid "Sản xuất"
+msgstr "Manufacturing"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:168
+msgid "SmartMES - Hệ thống điều hành sản xuất"
+msgstr "SmartMES - Manufacturing Execution System"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:173
+msgid "Công ty TNHH Sản xuất DEF"
+msgstr "DEF Manufacturing Co., Ltd."
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:177
+msgid "12 tháng"
+msgstr "12 months"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:188
+msgid ""
+"Nhà máy với 3 dây chuyền sản xuất chưa có hệ thống giám sát tập trung. Việc "
+"thu thập dữ liệu OEE, quản lý chất lượng và truy xuất nguồn gốc đều làm thủ "
+"công, chậm và thiếu chính xác."
+msgstr ""
+"A factory with 3 production lines had no centralized monitoring system. OEE "
+"data collection, quality management and traceability were all manual, slow "
+"and inaccurate."
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:192
+msgid ""
+"Triển khai SmartMES tích hợp 50+ IoT sensors trên dây chuyền: Dashboard giám "
+"sát OEE real-time, cảnh báo tự động khi có sự cố, quản lý lô hàng và truy "
+"xuất nguồn gốc theo tiêu chuẩn ISO."
+msgstr ""
+"Deployed SmartMES integrated with 50+ IoT sensors on production lines: Real-"
+"time OEE monitoring dashboard, automatic alerts for incidents, batch "
+"management and traceability according to ISO standards."
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:199
+msgid "Tăng hiệu suất thiết bị (OEE)"
+msgstr "Increased equipment efficiency (OEE)"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:206
+msgid "Giảm tỷ lệ sản phẩm lỗi"
+msgstr "Reduced defect rate"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:213
+msgid "VNĐ tiết kiệm/năm"
+msgstr "VND saved/year"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:226
+msgid "Lĩnh vực phục vụ"
+msgstr "Industries Served"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:227
+msgid ""
+"SGTech có kinh nghiệm triển khai dự án trong 8+ ngành nghề, từ bán lẻ, sản "
+"xuất đến y tế, giáo dục."
+msgstr ""
+"SGTech has experience implementing projects in 8+ industries, from retail, "
+"manufacturing to healthcare, education."
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:234
+#: wp-content/themes/saigontech-v2/page-du-an.php:242
+#: wp-content/themes/saigontech-v2/page-du-an.php:249
+#: wp-content/themes/saigontech-v2/page-du-an.php:263
+#: wp-content/themes/saigontech-v2/page-du-an.php:270
+#: wp-content/themes/saigontech-v2/page-du-an.php:284
+#, php-format
+msgid "%d dự án"
+msgstr "%d projects"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:239
+msgid "Bán lẻ & E-commerce"
+msgstr "Retail & E-commerce"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:254
+msgid "Tài chính - Ngân hàng"
+msgstr "Finance & Banking"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:261
+msgid "Y tế"
+msgstr "Healthcare"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:268
+msgid "Giáo dục"
+msgstr "Education"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:275
+msgid "Logistics"
+msgstr "Logistics"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:281
+msgid "Du lịch - Khách sạn"
+msgstr "Travel & Hospitality"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:301
+msgid "Khách hàng tin tưởng"
+msgstr "Trusted Clients"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:305
+msgid "Ngành nghề phục vụ"
+msgstr "Industries Served"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:309
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:222
+msgid "Khách hàng hài lòng"
+msgstr "Client Satisfaction"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:320
+msgid "Dự án của bạn sẽ là câu chuyện tiếp theo"
+msgstr "Your Project Will Be the Next Story"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:321
+msgid ""
+"Mỗi dự án đều bắt đầu từ một cuộc trò chuyện. Hãy chia sẻ với SGTech về bài "
+"toán của bạn, chúng tôi sẽ đề xuất giải pháp phù hợp nhất."
+msgstr ""
+"Every project starts with a conversation. Share your challenges with SGTech, "
+"and we will propose the most suitable solution."
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:324
+msgid "Bắt đầu dự án của bạn"
+msgstr "Start Your Project"
+
+#: wp-content/themes/saigontech-v2/page-du-an.php:328
+msgid "Tìm hiểu dịch vụ"
+msgstr "Explore Our Services"
+
+# Contact page
+#: wp-content/themes/saigontech-v2/page-lien-he.php:10
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:316
+msgid "Liên hệ với chúng tôi"
+msgstr "Contact Us"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:12
+msgid ""
+"Hãy để lại thông tin, đội ngũ SGTech sẽ liên hệ tư vấn miễn phí về giải pháp "
+"phù hợp nhất cho doanh nghiệp của bạn."
+msgstr ""
+"Leave your information, SGTech team will contact you for free consultation "
+"on the most suitable solution for your business."
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:23
+msgid "Gửi yêu cầu tư vấn"
+msgstr "Send Consultation Request"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:25
+msgid "Điền thông tin và chúng tôi sẽ liên hệ sớm nhất."
+msgstr "Fill in the information and we will contact you as soon as possible."
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:36
+msgid "Thông tin liên hệ"
+msgstr "Contact Information"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:42
+msgid "Email"
+msgstr "Email"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:45
+msgid "Phản hồi trong 24h"
+msgstr "Response within 24 hours"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:53
+msgid "Hotline"
+msgstr "Hotline"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:56
+msgid "Hỗ trợ 24/7"
+msgstr "24/7 Support"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:64
+msgid "Địa chỉ"
+msgstr "Address"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:68
+msgid "Văn phòng chính"
+msgstr "Head Office"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:76
+msgid "Giờ làm việc"
+msgstr "Working Hours"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:78
+msgid "Thứ 2 - Thứ 6: 8:30 - 17:30"
+msgstr "Monday - Friday: 8:30 AM - 5:30 PM"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:99
+msgid "Câu hỏi thường gặp"
+msgstr "FAQ"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:101
+msgid "Một số câu hỏi phổ biến từ khách hàng của chúng tôi."
+msgstr "Some frequently asked questions from our customers."
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:105
+msgid "Chi phí phát triển phần mềm là bao nhiêu?"
+msgstr "How much does software development cost?"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:107
+msgid ""
+"Chi phí phụ thuộc vào độ phức tạp và quy mô dự án. Chúng tôi sẽ tư vấn và "
+"báo giá chi tiết sau khi hiểu rõ yêu cầu của bạn."
+msgstr ""
+"Costs depend on the complexity and scope of the project. We will consult and "
+"provide detailed quotes after understanding your requirements."
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:111
+msgid "Thời gian hoàn thành dự án là bao lâu?"
+msgstr "How long does it take to complete a project?"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:113
+msgid ""
+"Thời gian dao động từ 2-12 tháng tùy theo quy mô. Chúng tôi cam kết tuân thủ "
+"tiến độ đã thỏa thuận."
+msgstr ""
+"Timeline ranges from 2-12 months depending on scope. We commit to adhering "
+"to the agreed schedule."
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:118
+msgid "SGTech có hỗ trợ bảo trì sau khi bàn giao không?"
+msgstr "Does SGTech provide maintenance support after handover?"
+
+#: wp-content/themes/saigontech-v2/page-lien-he.php:119
+msgid ""
+"Có, chúng tôi cung cấp dịch vụ bảo trì và hỗ trợ kỹ thuật 24/7 với các gói "
+"dịch vụ linh hoạt."
+msgstr ""
+"Yes, we provide maintenance and 24/7 technical support services with "
+"flexible service packages."
+
+# About us page
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:12
+msgid "Đội ngũ SGTech"
+msgstr "SGTech Team"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:18
+msgid ""
+"Hơn 10 năm kinh nghiệm, SGTech tự hào là đối tác công nghệ tin cậy đồng hành "
+"cùng hơn 30 doanh nghiệp Việt trong hành trình chuyển đổi số."
+msgstr ""
+"With over 10 years of experience, SGTech is proud to be a trusted technology "
+"partner accompanying more than 30 Vietnamese enterprises on their digital "
+"transformation journey."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:30
+msgid "Câu chuyện của chúng tôi"
+msgstr "Our Story"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:32
+msgid "Từ đam mê công nghệ đến đối tác tin cậy"
+msgstr "From Technology Passion to Trusted Partner"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:35
+#, php-format
+msgid ""
+"<strong class=\"text-dark\">SGTech được thành lập vào năm %d</strong> bởi "
+"nhóm 5 kỹ sư công nghệ đam mê với tầm nhìn: trở thành đối tác tin cậy cho "
+"các doanh nghiệp Việt Nam trong hành trình số hóa."
+msgstr ""
+"<strong class=\"text-dark\">SGTech was founded in %d</strong> by a group of "
+"5 passionate technology engineers with a vision: to become a trusted partner "
+"for Vietnamese enterprises on their digitalization journey."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:38
+#, php-format
+msgid ""
+"Xuất phát từ những dự án nhỏ cho startup và SME, chúng tôi dần khẳng định uy "
+"tín qua chất lượng sản phẩm và sự tận tâm với khách hàng. Sau hơn 10 năm, "
+"SGTech đã phát triển thành đội ngũ <strong class=\"text-dark\">%d+ chuyên "
+"gia công nghệ</strong>, hoàn thành <strong class=\"text-dark\">%d+ dự án đa "
+"dạng</strong> trong các lĩnh vực: bất động sản, bán lẻ, sản xuất, logistics, "
+"y tế..."
+msgstr ""
+"Starting from small projects for startups and SMEs, we gradually built our "
+"reputation through product quality and customer dedication. After more than "
+"10 years, SGTech has grown into a team of <strong class=\"text-dark\">%d+ "
+"technology experts</strong>, completing <strong class=\"text-dark\">%d+ "
+"diverse projects</strong> in various industries: real estate, retail, "
+"manufacturing, logistics, healthcare..."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:41
+msgid ""
+"Chúng tôi tin rằng công nghệ không chỉ là công cụ, mà là động lực giúp doanh "
+"nghiệp bứt phá. Mỗi dự án của SGTech đều được thực hiện với cam kết: <strong "
+"class=\"text-dark\">chất lượng, đúng tiến độ, đồng hành lâu dài</strong>."
+msgstr ""
+"We believe that technology is not just a tool, but a driving force to help "
+"businesses break through. Every SGTech project is executed with commitment: "
+"<strong class=\"text-dark\">quality, on time, long-term partnership</strong>."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:51
+msgid "Đội ngũ SGTech trong buổi họp chiến lược"
+msgstr "SGTech team in a strategy meeting"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:61
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:207
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:214
+#, php-format
+msgid "%d+"
+msgstr "%d+"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:78
+msgid "Hành trình phát triển"
+msgstr "Development Journey"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:80
+msgid "Những cột mốc quan trọng đánh dấu sự trưởng thành của SGTech."
+msgstr "Important milestones marking SGTech's growth."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:89
+msgid "Khởi đầu"
+msgstr "Beginning"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:92
+msgid "SGTech được thành lập với 5 thành viên sáng lập"
+msgstr "SGTech was founded with 5 founding members"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:104
+msgid "Mở rộng"
+msgstr "Expansion"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:107
+msgid "Hoàn thành dự án thứ 10, đội ngũ tăng lên 8 người"
+msgstr "Completed 10th project, team grew to 8 people"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:119
+msgid "Bứt phá"
+msgstr "Breakthrough"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:122
+msgid "Phục vụ hơn 20 khách hàng doanh nghiệp"
+msgstr "Serving more than 20 enterprise clients"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:135
+msgid "Chuyên nghiệp hóa"
+msgstr "Professionalization"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:137
+msgid "Áp dụng quy trình Agile, đạt 50+ dự án"
+msgstr "Applied Agile process, reached 50+ projects"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:149
+msgid "Hiện tại"
+msgstr "Present"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:152
+msgid "15+ chuyên gia, đối tác tin cậy của 30+ doanh nghiệp"
+msgstr "15+ experts, trusted partner of 30+ enterprises"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:173
+msgid "Sứ mệnh"
+msgstr "Mission"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:174
+msgid ""
+"Cung cấp giải pháp công nghệ <strong class=\"text-dark\">chất lượng cao, giá "
+"cả hợp lý</strong> giúp doanh nghiệp Việt Nam tối ưu hóa quy trình vận hành, "
+"nâng cao năng lực cạnh tranh và phát triển bền vững trong kỷ nguyên số."
+msgstr ""
+"Providing <strong class=\"text-dark\">high-quality, affordable</strong> "
+"technology solutions to help Vietnamese enterprises optimize operations, "
+"enhance competitiveness and achieve sustainable growth in the digital era."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:184
+msgid "Tầm nhìn"
+msgstr "Vision"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:185
+msgid ""
+"Trở thành <strong class=\"text-dark\">công ty công nghệ hàng đầu Việt Nam</"
+"strong>, được biết đến với những giải pháp sáng tạo, đội ngũ chuyên nghiệp "
+"và cam kết vượt trội trong việc đồng hành cùng sự thành công của khách hàng."
+msgstr ""
+"To become a <strong class=\"text-dark\">leading technology company in "
+"Vietnam</strong>, known for innovative solutions, professional team and "
+"outstanding commitment to accompanying customer success."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:201
+msgid "Năm thành lập"
+msgstr "Year Founded"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:215
+msgid "Chuyên gia công nghệ"
+msgstr "Tech Experts"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:221
+#, php-format
+msgid "%d%%"
+msgstr "%d%%"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:232
+msgid "DNA của SGTech"
+msgstr "SGTech DNA"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:233
+msgid "Giá trị cốt lõi"
+msgstr "Core Values"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:235
+msgid ""
+"Những giá trị nền tảng định hình văn hóa, cách thức làm việc và mọi quyết "
+"định của SGTech."
+msgstr ""
+"Core values that shape the culture, working methods and every decision at "
+"SGTech."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:247
+msgid "Tận tâm"
+msgstr "Dedication"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:249
+msgid ""
+"Lắng nghe và thấu hiểu nhu cầu khách hàng, đặt lợi ích của họ lên hàng đầu "
+"trong mọi quyết định."
+msgstr ""
+"Listening and understanding customer needs, putting their interests first in "
+"every decision."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:262
+msgid "Chính trực"
+msgstr "Integrity"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:265
+msgid ""
+"Minh bạch trong giao tiếp, trung thực về năng lực và cam kết thực hiện đúng "
+"những gì đã hứa."
+msgstr ""
+"Transparent in communication, honest about capabilities and committed to "
+"doing what we promise."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:278
+msgid "Sáng tạo"
+msgstr "Innovation"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:281
+msgid ""
+"Không ngừng học hỏi, áp dụng công nghệ mới để tìm kiếm giải pháp tối ưu cho "
+"từng bài toán."
+msgstr ""
+"Continuously learning, applying new technologies to find optimal solutions "
+"for each problem."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:294
+msgid "Hợp tác"
+msgstr "Collaboration"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:296
+msgid ""
+"Xây dựng mối quan hệ đối tác lâu dài, cùng khách hàng phát triển và thành "
+"công."
+msgstr ""
+"Building long-term partnerships, growing and succeeding together with "
+"customers."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:309
+msgid "Bạn muốn tìm hiểu thêm về SGTech?"
+msgstr "Want to Learn More About SGTech?"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:312
+msgid ""
+"Hãy liên hệ để chúng tôi được lắng nghe và chia sẻ về những gì SGTech có thể "
+"làm cho doanh nghiệp của bạn."
+msgstr "Contact us to listen and share what SGTech can do for your business."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:320
+msgid "Xem dự án tiêu biểu"
+msgstr "View Featured Projects"
+
+# Single post page
+#: wp-content/themes/saigontech-v2/single.php:26
+msgid "Quay lại Blog"
+msgstr "Back to Blog"
+
+#: wp-content/themes/saigontech-v2/single.php:74
+msgid "Thành viên đội ngũ chuyên gia tại SGTech."
+msgstr "Member of the expert team at SGTech."
+
+#: wp-content/themes/saigontech-v2/single.php:82
+msgid "Chia sẻ:"
+msgstr "Share:"
+
+#: wp-content/themes/saigontech-v2/single.php:105
+msgid "Bạn cần tư vấn về giải pháp này?"
+msgstr "Need Consultation on This Solution?"
+
+#: wp-content/themes/saigontech-v2/single.php:106
+msgid ""
+"Đội ngũ chuyên gia SGTech sẵn sàng hỗ trợ bạn triển khai giải pháp phù hợp."
+msgstr ""
+"SGTech's expert team is ready to help you implement the right solution."
+
+#: wp-content/themes/saigontech-v2/single.php:108
+msgid "Liên hệ tư vấn miễn phí"
+msgstr "Free Consultation"
+
+#: wp-content/themes/saigontech-v2/single.php:121
+msgid "Bài viết liên quan"
+msgstr "Related Posts"
+
+#: wp-content/themes/saigontech-v2/single.php:172
+msgid "Chúng tôi sẵn sàng hỗ trợ bạn 24/7"
+msgstr "We are ready to support you 24/7"

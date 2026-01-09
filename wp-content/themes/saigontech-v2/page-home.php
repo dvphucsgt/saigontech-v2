@@ -26,11 +26,11 @@
                             mang đến giải pháp phần mềm chất lượng cao, tối ưu chi phí và thời gian.
                         </p>
                         <div class="d-flex flex-column flex-sm-row gap-3 pt-3">
-                            <a href="<?php echo home_url('/lien-he'); ?>" class="btn btn-secondary btn-lg">
+                            <a href="<?php echo sgtech_get_page_url('lien-he'); ?>" class="btn btn-secondary btn-lg">
                                 Nhận tư vấn miễn phí
                                 <i class="bi bi-arrow-right ms-2"></i>
                             </a>
-                            <a href="<?php echo home_url('/du-an'); ?>" class="btn btn-outline-light btn-lg">
+                            <a href="<?php echo sgtech_get_page_url('du-an'); ?>" class="btn btn-outline-light btn-lg">
                                 Xem dự án đã thực hiện
                             </a>
                         </div>
@@ -172,7 +172,7 @@
                             Từ ý tưởng đến sản phẩm hoàn chỉnh, chúng tôi cung cấp đầy đủ dịch vụ
                             công nghệ cho doanh nghiệp của bạn.
                         </p>
-                        <a href="<?php echo home_url('/dich-vu'); ?>" class="btn btn-secondary">
+                        <a href="<?php echo sgtech_get_page_url('dich-vu'); ?>" class="btn btn-secondary">
                             Tìm hiểu chi tiết
                             <i class="bi bi-arrow-right ms-2"></i>
                         </a>
@@ -312,7 +312,7 @@
                             <span>Cam kết bảo mật thông tin tuyệt đối</span>
                         </li>
                     </ul>
-                    <a href="<?php echo home_url('/ve-chung-toi'); ?>" class="btn btn-secondary">
+                    <a href="<?php echo sgtech_get_page_url('ve-chung-toi'); ?>" class="btn btn-secondary">
                         Tìm hiểu về SGTech
                         <i class="bi bi-arrow-right ms-2"></i>
                     </a>
@@ -600,7 +600,8 @@
                     nhu cầu và đề xuất giải pháp phù hợp nhất cho doanh nghiệp của bạn.
                 </p>
                 <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                    <a href="<?php echo home_url('/lien-he'); ?>" class="btn btn-secondary btn-lg sgtech-v2-shadow-lg">
+                    <a href="<?php echo sgtech_get_page_url('lien-he'); ?>"
+                        class="btn btn-secondary btn-lg sgtech-v2-shadow-lg">
                         Đặt lịch tư vấn
                         <i class="bi bi-arrow-right ms-2"></i>
                     </a>

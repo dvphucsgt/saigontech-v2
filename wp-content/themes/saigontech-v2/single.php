@@ -23,7 +23,7 @@ get_header(); ?>
                         <a href="<?php echo get_post_type_archive_link('post'); ?>"
                             class="d-inline-flex align-items-center gap-2 text-white text-decoration-none small opacity-75 hover-opacity-100 transition-all">
                             <i class="bi bi-arrow-left"></i>
-                            Quay lại Blog
+                            <?php _e('Quay lại Blog', 'saigontech-v2'); ?>
                         </a>
                         <span class="d-inline-block px-3 py-1 rounded-pill bg-secondary text-white small fw-medium">
                             <?php
@@ -44,7 +44,7 @@ get_header(); ?>
                         </span>
                         <span class="d-flex align-items-center gap-2">
                             <i class="bi bi-clock"></i>
-                            <?php echo saigontech_v2_estimate_reading_time(get_the_content()); ?> phút đọc
+                            <?php printf(__('%d phút đọc', 'saigontech-v2'), saigontech_v2_estimate_reading_time(get_the_content())); ?>
                         </span>
                     </div>
                 </div>
@@ -71,14 +71,15 @@ get_header(); ?>
                                         <?php the_author_meta('description'); ?>
                                     </p>
                                     <p class="sgtech-v2-text-muted-foreground small mb-0">
-                                        Thành viên đội ngũ chuyên gia tại SGTech.
+                                        <?php _e('Thành viên đội ngũ chuyên gia tại SGTech.', 'saigontech-v2'); ?>
                                     </p>
                                 </div>
                             </div>
 
                             <!-- Share Buttons -->
                             <div class="sgtech-v2-share-box">
-                                <span class="fw-bold me-2 align-self-center">Chia sẻ:</span>
+                                <span
+                                    class="fw-bold me-2 align-self-center"><?php _e('Chia sẻ:', 'saigontech-v2'); ?></span>
                                 <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode(get_permalink()); ?>"
                                     class="sgtech-v2-share-btn" aria-label="Share on Facebook" target="_blank">
                                     <i class="bi bi-facebook"></i>
@@ -100,12 +101,12 @@ get_header(); ?>
                             <!-- CTA Box in Content -->
                             <div class="mt-5 pt-4 border-top">
                                 <div class="sgtech-v2-bg-section-light rounded-4 p-4 p-md-5 text-center">
-                                    <h4 class="fw-bold mb-3">Bạn cần tư vấn về giải pháp này?</h4>
-                                    <p class="sgtech-v2-text-muted-foreground mb-4">
-                                        Đội ngũ chuyên gia SGTech sẵn sàng hỗ trợ bạn triển khai giải pháp phù hợp.
-                                    </p>
-                                    <a href="<?php echo home_url('/lien-he'); ?>" class="btn btn-secondary">
-                                        Liên hệ tư vấn miễn phí
+                                    <h4 class="fw-bold mb-3">
+                                        <?php _e('Bạn cần tư vấn về giải pháp này?', 'saigontech-v2'); ?>
+                                    </h4>
+                                    <?php _e('Đội ngũ chuyên gia SGTech sẵn sàng hỗ trợ bạn triển khai giải pháp phù hợp.', 'saigontech-v2'); ?>
+                                    <a href="<?php echo sgtech_get_page_url('lien-he'); ?>" class="btn btn-secondary">
+                                        <?php _e('Liên hệ tư vấn miễn phí', 'saigontech-v2'); ?>
                                         <i class="bi bi-arrow-right ms-2"></i>
                                     </a>
                                 </div>
@@ -118,7 +119,7 @@ get_header(); ?>
                         <div class="d-flex flex-column gap-4">
                             <!-- Related Posts (Recent Posts for now) -->
                             <div>
-                                <h5 class="fw-bold mb-4">Bài viết liên quan</h5>
+                                <h5 class="fw-bold mb-4"><?php _e('Bài viết liên quan', 'saigontech-v2'); ?></h5>
                                 <div class="d-flex flex-column gap-4">
                                     <?php
                                     $related_query = new WP_Query(array(
@@ -167,10 +168,12 @@ get_header(); ?>
                             <!-- CTA Card -->
                             <div class="card bg-primary text-white">
                                 <div class="card-body p-4 text-center">
-                                    <h5 class="fw-bold mb-2">Nhận tư vấn miễn phí</h5>
-                                    <p class="small mb-4 opacity-75">Chúng tôi sẵn sàng hỗ trợ bạn 24/7</p>
-                                    <a href="<?php echo home_url('/lien-he'); ?>" class="btn btn-secondary w-100">Liên hệ
-                                        ngay</a>
+                                    <h5 class="fw-bold mb-2"><?php _e('Nhận tư vấn miễn phí', 'saigontech-v2'); ?></h5>
+                                    <p class="small mb-4 opacity-75">
+                                        <?php _e('Chúng tôi sẵn sàng hỗ trợ bạn 24/7', 'saigontech-v2'); ?>
+                                    </p>
+                                    <a href="<?php echo sgtech_get_page_url('lien-he'); ?>"
+                                        class="btn btn-secondary w-100"><?php _e('Liên hệ ngay', 'saigontech-v2'); ?></a>
                                 </div>
                             </div>
                         </div>
