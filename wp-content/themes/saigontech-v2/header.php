@@ -51,57 +51,28 @@
                                     href="<?php echo sgtech_get_home_url(); ?>"><?php _e('Trang chủ', 'saigontech-v2'); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?php echo is_page('ve-chung-toi') || is_page('about-us') || is_page('about-ja') ? 'active' : ''; ?>"
+                                <a class="nav-link <?php echo is_page('ve-chung-toi') ? 'active' : ''; ?>"
                                     href="<?php echo sgtech_get_page_url('ve-chung-toi'); ?>"><?php _e('Về chúng tôi', 'saigontech-v2'); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?php echo is_page('dich-vu') || is_page('services') || is_page('service-ja') ? 'active' : ''; ?>"
+                                <a class="nav-link <?php echo is_page('dich-vu') ? 'active' : ''; ?>"
                                     href="<?php echo sgtech_get_page_url('dich-vu'); ?>"><?php _e('Dịch vụ', 'saigontech-v2'); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?php echo is_page('du-an') || is_page('projects') || is_page('project-ja') ? 'active' : ''; ?>"
+                                <a class="nav-link <?php echo is_page('du-an') ? 'active' : ''; ?>"
                                     href="<?php echo sgtech_get_page_url('du-an'); ?>"><?php _e('Dự án', 'saigontech-v2'); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?php echo is_home() || is_singular('post') || is_page('blog') || is_page('blog-ja') ? 'active' : ''; ?>"
+                                <a class="nav-link <?php echo is_home() || is_singular('post') || is_page('blog') ? 'active' : ''; ?>"
                                     href="<?php echo sgtech_get_page_url('blog'); ?>"><?php _e('Blog', 'saigontech-v2'); ?></a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link <?php echo is_page('lien-he') || is_page('contact') || is_page('contact-ja') ? 'active' : ''; ?>"
+                                <a class="nav-link <?php echo is_page('lien-he') ? 'active' : ''; ?>"
                                     href="<?php echo sgtech_get_page_url('lien-he'); ?>"><?php _e('Liên hệ', 'saigontech-v2'); ?></a>
                             </li>
                         </ul>
                     <?php endif; ?>
                 </div>
-
-                <!-- Language Switcher -->
-                <div class="d-none d-lg-flex align-items-center me-3">
-                    <?php if (function_exists('pll_the_languages')): ?>
-                        <div class="dropdown">
-                            <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button" id="langSwitcher"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <?php echo strtoupper(pll_current_language('slug')); ?>
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langSwitcher">
-                                <?php pll_the_languages(array('show_flags' => 0, 'show_names' => 1, 'display_names_as' => 'name')); ?>
-                            </ul>
-                        </div>
-                    <?php else: ?>
-                        <!-- Fallback static switcher -->
-                        <div class="dropdown">
-                            <button class="btn btn-sm btn-outline-primary dropdown-toggle" type="button"
-                                id="langSwitcherFallback" data-bs-toggle="dropdown" aria-expanded="false">
-                                VN
-                            </button>
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="langSwitcherFallback">
-                                <li><a class="dropdown-item" href="<?php echo home_url(); ?>">Tiếng Việt</a></li>
-                                <li><a class="dropdown-item" href="<?php echo home_url('/en/'); ?>">English</a></li>
-                                <li><a class="dropdown-item" href="<?php echo home_url('/ja/'); ?>">日本語</a></li>
-                            </ul>
-                        </div>
-                    <?php endif; ?>
-                </div>
-
                 <!-- CTA Button -->
                 <div class="d-none d-lg-block">
                     <a href="<?php echo sgtech_get_page_url('lien-he'); ?>"

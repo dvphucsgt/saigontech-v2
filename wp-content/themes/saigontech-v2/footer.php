@@ -4,9 +4,10 @@
         <div class="row g-4 g-lg-5">
             <!-- Company Info -->
             <div class="col-lg-4">
-                <div class="sgtech-v2-logo mb-3">
+                <a href="<?php echo sgtech_get_home_url(); ?>"
+                    class="sgtech-v2-logo mb-3 d-inline-block text-decoration-none">
                     <span class="text-white fs-4 fw-bold">SG</span><span class="text-secondary fs-4 fw-bold">Tech</span>
-                </div>
+                </a>
                 <p class="opacity-75 small leading-relaxed mb-4">
                     <?php _e('Đối tác công nghệ tin cậy cho doanh nghiệp Việt. Chúng tôi mang đến giải pháp phần mềm chất lượng cao, giúp doanh nghiệp tối ưu hóa quy trình và phát triển bền vững.', 'saigontech-v2'); ?>
                 </p>
