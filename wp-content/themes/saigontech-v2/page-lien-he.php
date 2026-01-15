@@ -98,38 +98,6 @@ get_header(); ?>
             </div>
         </div>
     </section>
-
-    <section class="sgtech-v2-section-padding sgtech-v2-bg-section-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="display-6 fw-bold mb-3"><?php _e('Câu hỏi thường gặp', 'saigontech-v2'); ?></h2>
-                <p class="sgtech-v2-text-muted-foreground small">
-                    <?php _e('Một số câu hỏi phổ biến từ khách hàng của chúng tôi.', 'saigontech-v2'); ?>
-                </p>
-            </div>
-            <div class="d-flex flex-column gap-3 sgtech-v2-max-w-3xl mx-auto">
-                <div class="sgtech-v2-faq-card">
-                    <h6 class="fw-bold mb-2"><?php _e('Chi phí phát triển phần mềm là bao nhiêu?', 'saigontech-v2'); ?>
-                    </h6>
-                    <?php _e('Chi phí phụ thuộc vào độ phức tạp và quy mô dự án. Chúng tôi sẽ tư vấn và báo giá chi tiết sau khi hiểu rõ yêu cầu của bạn.', 'saigontech-v2'); ?>
-                    </p>
-                </div>
-                <div class="sgtech-v2-faq-card">
-                    <h6 class="fw-bold mb-2"><?php _e('Thời gian hoàn thành dự án là bao lâu?', 'saigontech-v2'); ?>
-                    </h6>
-                    <?php _e('Thời gian dao động từ 2-12 tháng tùy theo quy mô. Chúng tôi cam kết tuân thủ tiến độ đã thỏa thuận.', 'saigontech-v2'); ?>
-                    </p>
-                </div>
-                <div class="sgtech-v2-faq-card">
-                    <h6 class="fw-bold mb-2">
-                        <?php _e('SGTech có hỗ trợ bảo trì sau khi bàn giao không?', 'saigontech-v2'); ?>
-                    </h6>
-                    <?php _e('Có, chúng tôi cung cấp dịch vụ bảo trì và hỗ trợ kỹ thuật 24/7 với các gói dịch vụ linh hoạt.', 'saigontech-v2'); ?>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
 </main>
 
 <?php get_footer(); ?>

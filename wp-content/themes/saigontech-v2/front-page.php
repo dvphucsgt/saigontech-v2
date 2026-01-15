@@ -100,60 +100,41 @@
                     <?php _e('Được tin tưởng bởi các doanh nghiệp hàng đầu', 'saigontech-v2'); ?>
                 </p>
             </div>
-            <div class="row g-3">
-                <div class="col-4 col-md-2">
+            <div class="row g-3 align-items-center justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2">
                     <div class="sgtech-v2-client-logo">
-                        <div class="text-center">
-                            <div class="sgtech-v2-abbr">TCV</div>
-                            <div class="small sgtech-v2-text-muted-foreground mt-1 d-none d-md-block">TechCorp
-                                Vietnam</div>
-                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/allsportsystems-logo.png"
+                            alt="All Sport Systems" class="sgtech-v2-client-logo-img">
                     </div>
                 </div>
-                <div class="col-4 col-md-2">
+                <div class="col-6 col-md-4 col-lg-2">
                     <div class="sgtech-v2-client-logo">
-                        <div class="text-center">
-                            <div class="sgtech-v2-abbr">SRE</div>
-                            <div class="small sgtech-v2-text-muted-foreground mt-1 d-none d-md-block">Saigon Real
-                                Estate</div>
-                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/bediffy_logo.png"
+                            alt="Bediffy" class="sgtech-v2-client-logo-img">
                     </div>
                 </div>
-                <div class="col-4 col-md-2">
+                <div class="col-6 col-md-4 col-lg-2">
                     <div class="sgtech-v2-client-logo">
-                        <div class="text-center">
-                            <div class="sgtech-v2-abbr">DM</div>
-                            <div class="small sgtech-v2-text-muted-foreground mt-1 d-none d-md-block">Delta
-                                Manufacturing
-                            </div>
-                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kisscurls_logo.png"
+                            alt="Kiss Curls" class="sgtech-v2-client-logo-img">
                     </div>
                 </div>
-                <div class="col-4 col-md-2">
+                <div class="col-6 col-md-4 col-lg-2">
                     <div class="sgtech-v2-client-logo">
-                        <div class="text-center">
-                            <div class="sgtech-v2-abbr">VRG</div>
-                            <div class="small sgtech-v2-text-muted-foreground mt-1 d-none d-md-block">VN Retail
-                                Group</div>
-                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/kraftgineer.png"
+                            alt="Kraftgineer" class="sgtech-v2-client-logo-img">
                     </div>
                 </div>
-                <div class="col-4 col-md-2">
+                <div class="col-6 col-md-4 col-lg-2">
                     <div class="sgtech-v2-client-logo">
-                        <div class="text-center">
-                            <div class="sgtech-v2-abbr">PL</div>
-                            <div class="small sgtech-v2-text-muted-foreground mt-1 d-none d-md-block">Pacific
-                                Logistics</div>
-                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/StickKAR_logo.png"
+                            alt="StickKAR" class="sgtech-v2-client-logo-img">
                     </div>
                 </div>
-                <div class="col-4 col-md-2">
+                <div class="col-6 col-md-4 col-lg-2">
                     <div class="sgtech-v2-client-logo">
-                        <div class="text-center">
-                            <div class="sgtech-v2-abbr">GE</div>
-                            <div class="small sgtech-v2-text-muted-foreground mt-1 d-none d-md-block">Green Energy
-                                VN</div>
-                        </div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/susuus.webp" alt="Susuus"
+                            class="sgtech-v2-client-logo-img">
                     </div>
                 </div>
             </div>
@@ -274,7 +255,8 @@
                             <div>
                                 <div class="h4 fw-bold text-primary mb-0">10+</div>
                                 <div class="small sgtech-v2-text-muted-foreground">
-                                    <?php _e('Năm kinh nghiệm', 'saigontech-v2'); ?></div>
+                                    <?php _e('Năm kinh nghiệm', 'saigontech-v2'); ?>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -375,9 +357,11 @@
                                 <div>
                                     <div class="fw-semibold">Trần Thị Lan</div>
                                     <div class="small sgtech-v2-text-muted-foreground">
-                                        <?php _e('Giám đốc Vận hành', 'saigontech-v2'); ?></div>
+                                        <?php _e('Giám đốc Vận hành', 'saigontech-v2'); ?>
+                                    </div>
                                     <div class="small text-secondary fs-8">
-                                        <?php _e('Tập đoàn Bất động sản XYZ', 'saigontech-v2'); ?></div>
+                                        <?php _e('Tập đoàn Bất động sản XYZ', 'saigontech-v2'); ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -398,9 +382,11 @@
                                 <div>
                                     <div class="fw-semibold">Lê Hoàng Phúc</div>
                                     <div class="small sgtech-v2-text-muted-foreground">
-                                        <?php _e('Giám đốc CNTT', 'saigontech-v2'); ?></div>
+                                        <?php _e('Giám đốc CNTT', 'saigontech-v2'); ?>
+                                    </div>
                                     <div class="small text-secondary fs-8">
-                                        <?php _e('Công ty Sản xuất Delta', 'saigontech-v2'); ?></div>
+                                        <?php _e('Công ty Sản xuất Delta', 'saigontech-v2'); ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -416,7 +402,8 @@
             <div class="text-center mb-4">
                 <h3 class="h5 fw-semibold mb-2"><?php _e('Công nghệ chúng tôi sử dụng', 'saigontech-v2'); ?></h3>
                 <p class="sgtech-v2-text-muted-foreground small">
-                    <?php _e('Stack công nghệ hiện đại, phù hợp với từng loại dự án', 'saigontech-v2'); ?></p>
+                    <?php _e('Stack công nghệ hiện đại, phù hợp với từng loại dự án', 'saigontech-v2'); ?>
+                </p>
             </div>
             <div class="row g-3">
                 <div class="col-6 col-sm-4 col-lg">
@@ -503,95 +490,127 @@
             </div>
 
             <div class="row g-4">
-                <!-- Blog 1 -->
-                <div class="col-md-6 col-lg-4">
-                    <a href="<?php echo sgtech_get_page_url('blog'); ?>" class="text-decoration-none">
-                        <div class="card sgtech-v2-blog-card h-100 card-hover-lift">
-                            <div class="sgtech-v2-thumbnail">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-digital-transformation.jpg"
-                                    alt="<?php esc_attr_e('5 xu hướng chuyển đổi số doanh nghiệp năm 2025', 'saigontech-v2'); ?>">
-                            </div>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span
-                                        class="badge badge-secondary"><?php _e('Chuyển đổi số', 'saigontech-v2'); ?></span>
-                                    <span
-                                        class="small sgtech-v2-text-muted-foreground"><?php printf(__('%d phút đọc', 'saigontech-v2'), 5); ?></span>
-                                </div>
-                                <h5 class="card-title fw-bold sgtech-v2-line-clamp-2 mb-2">
-                                    <?php _e('5 xu hướng chuyển đổi số doanh nghiệp năm 2025', 'saigontech-v2'); ?>
-                                </h5>
-                                <p
-                                    class="sgtech-v2-text-muted-foreground small leading-relaxed sgtech-v2-line-clamp-2 mb-3">
-                                    <?php _e('Khám phá những công nghệ và chiến lược chuyển đổi số đang định hình tương lai doanh nghiệp Việt Nam.', 'saigontech-v2'); ?>
-                                </p>
-                                <div class="d-flex align-items-center small sgtech-v2-text-muted-foreground">
-                                    <i class="bi bi-calendar3 me-2"></i>
-                                    28/12/2024
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- ... (Blogs 2 and 3 similar) ... -->
-                <div class="col-md-6 col-lg-4">
-                    <a href="<?php echo sgtech_get_page_url('blog'); ?>" class="text-decoration-none">
-                        <div class="card sgtech-v2-blog-card h-100 card-hover-lift">
-                            <div class="sgtech-v2-thumbnail">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-iot-manufacturing.jpg"
-                                    alt="<?php esc_attr_e('Case Study: Tối ưu quy trình sản xuất với IoT', 'saigontech-v2'); ?>">
-                            </div>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span
-                                        class="badge badge-secondary"><?php _e('Case Study', 'saigontech-v2'); ?></span>
-                                    <span
-                                        class="small sgtech-v2-text-muted-foreground"><?php printf(__('%d phút đọc', 'saigontech-v2'), 8); ?></span>
-                                </div>
-                                <h5 class="card-title fw-bold sgtech-v2-line-clamp-2 mb-2">
-                                    <?php _e('Case Study: Tối ưu quy trình sản xuất với IoT', 'saigontech-v2'); ?>
-                                </h5>
-                                <p
-                                    class="sgtech-v2-text-muted-foreground small leading-relaxed sgtech-v2-line-clamp-2 mb-3">
-                                    <?php _e('Cách SGTech giúp doanh nghiệp sản xuất giảm 30% thời gian downtime với giải pháp IoT tích hợp.', 'saigontech-v2'); ?>
-                                </p>
-                                <div class="d-flex align-items-center small sgtech-v2-text-muted-foreground">
-                                    <i class="bi bi-calendar3 me-2"></i>
-                                    20/12/2024
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="<?php echo sgtech_get_page_url('blog'); ?>" class="text-decoration-none">
-                        <div class="card sgtech-v2-blog-card h-100 card-hover-lift">
-                            <div class="sgtech-v2-thumbnail">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-cybersecurity.jpg"
-                                    alt="<?php esc_attr_e('Bảo mật dữ liệu: Những điều doanh nghiệp cần biết', 'saigontech-v2'); ?>">
-                            </div>
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <span class="badge badge-secondary"><?php _e('Bảo mật', 'saigontech-v2'); ?></span>
-                                    <span
-                                        class="small sgtech-v2-text-muted-foreground"><?php printf(__('%d phút đọc', 'saigontech-v2'), 6); ?></span>
-                                </div>
-                                <h5 class="card-title fw-bold sgtech-v2-line-clamp-2 mb-2">
-                                    <?php _e('Bảo mật dữ liệu: Những điều doanh nghiệp cần biết', 'saigontech-v2'); ?>
-                                </h5>
-                                <p
-                                    class="sgtech-v2-text-muted-foreground small leading-relaxed sgtech-v2-line-clamp-2 mb-3">
-                                    <?php _e('Hướng dẫn toàn diện về bảo mật thông tin cho doanh nghiệp vừa và nhỏ trong thời đại số.', 'saigontech-v2'); ?>
-                                </p>
-                                <div class="d-flex align-items-center small sgtech-v2-text-muted-foreground">
-                                    <i class="bi bi-calendar3 me-2"></i>
-                                    15/12/2024
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                <?php
+                // Get current language
+                $current_lang = 'vi';
+                if (function_exists('sgtech_get_current_language')) {
+                    $current_lang = sgtech_get_current_language();
+                }
 
+                // Get the language category ID by slug
+                global $wpdb;
+                $lang_category_id = $wpdb->get_var($wpdb->prepare(
+                    "SELECT t.term_id FROM {$wpdb->terms} t 
+                     INNER JOIN {$wpdb->term_taxonomy} tt ON t.term_id = tt.term_id 
+                     WHERE t.slug = %s AND tt.taxonomy = 'category'",
+                    strtolower($current_lang)
+                ));
+
+                // Query for 3 latest posts
+                $blog_args = array(
+                    'post_type' => 'post',
+                    'posts_per_page' => 3,
+                    'post_status' => 'publish',
+                    'lang' => '', // Bypass Polylang filter
+                );
+
+                // Filter by language category if found
+                if ($lang_category_id) {
+                    $blog_args['tax_query'] = array(
+                        array(
+                            'taxonomy' => 'category',
+                            'field' => 'term_id',
+                            'terms' => (int) $lang_category_id,
+                        ),
+                    );
+                }
+
+                $blog_query = new WP_Query($blog_args);
+
+                if ($blog_query->have_posts()):
+                    while ($blog_query->have_posts()):
+                        $blog_query->the_post();
+                        
+                        // Category Translation Map
+                        $category_translations = array(
+                            'en' => array(
+                                'Công nghệ' => 'Technology',
+                                'Bảo mật' => 'Security',
+                                'Chuyển đổi số' => 'Digital Transformation',
+                                'Case Study' => 'Case Study'
+                            ),
+                            'ja' => array(
+                                'Công nghệ' => 'テクノロジー',
+                                'Bảo mật' => 'セキュリティ',
+                                'Chuyển đổi số' => 'デジタル変革',
+                                'Case Study' => 'ケーススタディ'
+                            )
+                        );
+                        
+                        // Get display category (exclude language categories)
+                        $cats = get_the_category();
+                        $display_cat = '';
+                        foreach ($cats as $cat) {
+                            if (!in_array($cat->slug, array('vi', 'en', 'ja', 'uncategorized'))) {
+                                $base_name = str_replace(array(', VI', ', EN', ', JA'), '', $cat->name);
+                                // Translate if needed
+                                if (isset($category_translations[$current_lang]) && isset($category_translations[$current_lang][$base_name])) {
+                                    $display_cat = $category_translations[$current_lang][$base_name];
+                                } else {
+                                    $display_cat = $base_name;
+                                }
+                                break;
+                            }
+                        }
+
+                        // Estimate reading time
+                        $reading_time = function_exists('saigontech_v2_estimate_reading_time')
+                            ? saigontech_v2_estimate_reading_time(get_the_content())
+                            : 5;
+                        ?>
+                        <div class="col-md-6 col-lg-4">
+                            <a href="<?php the_permalink(); ?>" class="text-decoration-none">
+                                <div class="card sgtech-v2-blog-card h-100 card-hover-lift">
+                                    <div class="sgtech-v2-thumbnail">
+                                        <?php if (has_post_thumbnail()): ?>
+                                            <?php the_post_thumbnail('medium_large', array('alt' => get_the_title())); ?>
+                                        <?php else: ?>
+                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-digital-transformation.jpg"
+                                                alt="<?php the_title_attribute(); ?>">
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center mb-2">
+                                            <?php if ($display_cat): ?>
+                                                <span class="badge badge-secondary"><?php echo esc_html($display_cat); ?></span>
+                                            <?php endif; ?>
+                                            <span class="small sgtech-v2-text-muted-foreground">
+                                                <?php printf(__('%d phút đọc', 'saigontech-v2'), $reading_time); ?>
+                                            </span>
+                                        </div>
+                                        <h5 class="card-title fw-bold sgtech-v2-line-clamp-2 mb-2">
+                                            <?php the_title(); ?>
+                                        </h5>
+                                        <p
+                                            class="sgtech-v2-text-muted-foreground small leading-relaxed sgtech-v2-line-clamp-2 mb-3">
+                                            <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
+                                        </p>
+                                        <div class="d-flex align-items-center small sgtech-v2-text-muted-foreground">
+                                            <i class="bi bi-calendar3 me-2"></i>
+                                            <?php echo get_the_date(); ?>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <?php endwhile;
+                    wp_reset_postdata();
+                else: ?>
+                    <div class="col-12 text-center">
+                        <p class="sgtech-v2-text-muted-foreground"><?php _e('Chưa có bài viết nào.', 'saigontech-v2'); ?>
+                        </p>
+                    </div>
+                <?php endif; ?>
             </div>
         </div>
     </section>
@@ -601,7 +620,8 @@
         <div class="container">
             <div class="text-center mx-auto sgtech-v2-max-w-3xl">
                 <h2 class="display-6 fw-bold mb-3 text-white">
-                    <?php _e('Sẵn sàng nâng tầm doanh nghiệp của bạn?', 'saigontech-v2'); ?></h2>
+                    <?php _e('Sẵn sàng nâng tầm doanh nghiệp của bạn?', 'saigontech-v2'); ?>
+                </h2>
                 <p class="opacity-75 fs-5 leading-relaxed mb-4">
                     <?php _e('Liên hệ ngay với SGTech để được tư vấn miễn phí. Chúng tôi sẽ phân tích nhu cầu và đề xuất giải pháp phù hợp nhất cho doanh nghiệp của bạn.', 'saigontech-v2'); ?>
                 </p>

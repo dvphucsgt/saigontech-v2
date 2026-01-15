@@ -115,13 +115,7 @@ add_filter('nav_menu_link_attributes', 'sgtech_add_active_class_to_link', 10, 3)
 function sgtech_get_page_url($slug)
 {
     $page = get_page_by_path($slug);
-
-    if ($page) {
-        return get_permalink($page->ID);
-    }
-
-    // Fallback to home_url with the slug
-    return home_url('/' . $slug . '/');
+    return $page ? get_permalink($page->ID) : home_url('/' . $slug . '/');
 }
 
 /**
@@ -134,10 +128,148 @@ function sgtech_get_home_url()
 
 /**
  * Display Contact Form 7 form
- * GTranslate will auto-translate the form content
  */
 function sgtech_display_cf7_form()
 {
-    // Main Vietnamese form - GTranslate handles translation
     echo do_shortcode('[contact-form-7 id="85"]');
+}
+
+/**
+ * Language Switcher Configuration
+ */
+function sgtech_get_available_languages()
+{
+    return array(
+        'vi' => array(
+            'name' => 'Tiếng Việt',
+            'native' => 'Tiếng Việt',
+            'flag' => '🇻🇳',
+            'locale' => 'vi'
+        ),
+        'en' => array(
+            'name' => 'English',
+            'native' => 'English',
+            'flag' => '🇺🇸',
+            'locale' => 'en_US'
+        ),
+        'ja' => array(
+            'name' => 'Japanese',
+            'native' => '日本語',
+            'flag' => '🇯🇵',
+            'locale' => 'ja'
+        )
+    );
+}
+
+/**
+ * Set language cookie early in the request (before headers are sent)
+ */
+function sgtech_set_language_cookie()
+{
+    if (isset($_GET['lang'])) {
+        $lang = sanitize_text_field($_GET['lang']);
+        $available = sgtech_get_available_languages();
+        if (array_key_exists($lang, $available)) {
+            // Set cookie for 30 days - must be done before any output
+            if (!headers_sent()) {
+                $secure = is_ssl(); // Auto-detect HTTPS
+                $expire = time() + (30 * 24 * 60 * 60);
+
+                // Use setcookie with options array (PHP 7.3+)
+                if (version_compare(PHP_VERSION, '7.3.0', '>=')) {
+                    setcookie('sgtech_language', $lang, [
+                        'expires' => $expire,
+                        'path' => '/',
+                        'domain' => '',
+                        'secure' => $secure,
+                        'httponly' => false,
+                        'samesite' => 'Lax'
+                    ]);
+                } else {
+                    setcookie('sgtech_language', $lang, $expire, '/; SameSite=Lax', '', $secure, false);
+                }
+            }
+        }
+    }
+}
+add_action('init', 'sgtech_set_language_cookie', 1);
+
+/**
+ * Get current language code
+ */
+function sgtech_get_current_language()
+{
+    if (isset($_GET['lang'])) {
+        $lang = sanitize_text_field($_GET['lang']);
+        $available = sgtech_get_available_languages();
+        if (array_key_exists($lang, $available)) {
+            return $lang;
+        }
+    }
+
+    if (isset($_COOKIE['sgtech_language'])) {
+        $lang = sanitize_text_field($_COOKIE['sgtech_language']);
+        $available = sgtech_get_available_languages();
+        if (array_key_exists($lang, $available)) {
+            return $lang;
+        }
+    }
+
+    return 'vi'; // Default language
+}
+
+/**
+ * Switch WordPress locale based on selected language
+ */
+function sgtech_switch_locale($locale)
+{
+    $current_lang = sgtech_get_current_language();
+    $languages = sgtech_get_available_languages();
+
+    if (isset($languages[$current_lang])) {
+        return $languages[$current_lang]['locale'];
+    }
+
+    return $locale;
+}
+add_filter('locale', 'sgtech_switch_locale');
+
+/**
+ * Display language switcher dropdown
+ */
+function sgtech_language_switcher()
+{
+    $languages = sgtech_get_available_languages();
+    $current_lang = sgtech_get_current_language();
+    $current = $languages[$current_lang];
+
+    // Get current URL without lang parameter
+    $current_url = home_url(add_query_arg(array()));
+    $current_url = remove_query_arg('lang', $current_url);
+
+    ob_start();
+    ?>
+    <div class="sgtech-lang-switcher">
+        <button class="sgtech-lang-current" type="button" aria-expanded="false" aria-haspopup="true">
+            <span class="sgtech-lang-flag"><?php echo $current['flag']; ?></span>
+            <span class="sgtech-lang-code"><?php echo strtoupper($current_lang); ?></span>
+            <i class="bi bi-chevron-down sgtech-lang-arrow"></i>
+        </button>
+        <ul class="sgtech-lang-dropdown">
+            <?php foreach ($languages as $code => $lang): ?>
+                <li>
+                    <a href="<?php echo esc_url(add_query_arg('lang', $code, $current_url)); ?>"
+                        class="sgtech-lang-option <?php echo $code === $current_lang ? 'active' : ''; ?>">
+                        <span class="sgtech-lang-flag"><?php echo $lang['flag']; ?></span>
+                        <span class="sgtech-lang-name"><?php echo $lang['native']; ?></span>
+                        <?php if ($code === $current_lang): ?>
+                            <i class="bi bi-check2 sgtech-lang-check"></i>
+                        <?php endif; ?>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+    <?php
+    return ob_get_clean();
 }

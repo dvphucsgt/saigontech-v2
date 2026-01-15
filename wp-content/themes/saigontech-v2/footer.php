@@ -28,8 +28,8 @@
                         class="small"><?php _e('Về chúng tôi', 'saigontech-v2'); ?></a>
                     <a href="<?php echo sgtech_get_page_url('dich-vu'); ?>"
                         class="small"><?php _e('Dịch vụ', 'saigontech-v2'); ?></a>
-                    <a href="<?php echo sgtech_get_page_url('du-an'); ?>"
-                        class="small"><?php _e('Dự án', 'saigontech-v2'); ?></a>
+                    <!-- <a href="<?php echo sgtech_get_page_url('du-an'); ?>"
+                        class="small"><?php _e('Dự án', 'saigontech-v2'); ?></a> -->
                     <a href="<?php echo sgtech_get_page_url('lien-he'); ?>"
                         class="small"><?php _e('Liên hệ', 'saigontech-v2'); ?></a>
                 </nav>

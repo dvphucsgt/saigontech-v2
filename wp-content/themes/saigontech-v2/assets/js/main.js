@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initScrollAnimations();
     initHeaderScroll();
     initBlogAjax();
+    initLanguageSwitcher();
 });
 
 /**
@@ -362,5 +363,82 @@ function initScrollAnimations() {
     animatedElements.forEach(element => {
         element.style.opacity = '0';
         observer.observe(element);
+    });
+}
+
+/**
+ * Language Switcher Toggle (for mobile) + Cookie Setting
+ */
+function initLanguageSwitcher() {
+    const switchers = document.querySelectorAll('.sgtech-lang-switcher');
+
+    // Function to set cookie
+    function setCookie(name, value, days) {
+        const expires = new Date(Date.now() + days * 24 * 60 * 60 * 1000).toUTCString();
+        document.cookie = name + '=' + encodeURIComponent(value) + '; expires=' + expires + '; path=/; SameSite=Lax';
+    }
+
+    // Function to get cookie
+    function getCookie(name) {
+        const value = '; ' + document.cookie;
+        const parts = value.split('; ' + name + '=');
+        if (parts.length === 2) return decodeURIComponent(parts.pop().split(';').shift());
+        return null;
+    }
+
+    // Check if URL has lang parameter and set cookie
+    const urlParams = new URLSearchParams(window.location.search);
+    const langParam = urlParams.get('lang');
+    if (langParam && ['vi', 'en', 'ja'].includes(langParam)) {
+        setCookie('sgtech_language', langParam, 30);
+        console.log('Language cookie set to:', langParam);
+    }
+
+    switchers.forEach(switcher => {
+        const button = switcher.querySelector('.sgtech-lang-current');
+        const langOptions = switcher.querySelectorAll('.sgtech-lang-option');
+
+        if (button) {
+            button.addEventListener('click', function (e) {
+                e.stopPropagation();
+
+                // Close other switchers
+                switchers.forEach(s => {
+                    if (s !== switcher) {
+                        s.classList.remove('open');
+                    }
+                });
+
+                // Toggle current
+                switcher.classList.toggle('open');
+                button.setAttribute('aria-expanded', switcher.classList.contains('open'));
+            });
+        }
+
+        // Handle language option click - set cookie BEFORE navigation
+        langOptions.forEach(option => {
+            option.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href) {
+                    const url = new URL(href, window.location.origin);
+                    const lang = url.searchParams.get('lang');
+                    if (lang && ['vi', 'en', 'ja'].includes(lang)) {
+                        setCookie('sgtech_language', lang, 30);
+                        console.log('Set cookie before navigation:', lang);
+                    }
+                }
+            });
+        });
+    });
+
+    // Close when clicking outside
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('.sgtech-lang-switcher')) {
+            switchers.forEach(switcher => {
+                switcher.classList.remove('open');
+                const btn = switcher.querySelector('.sgtech-lang-current');
+                if (btn) btn.setAttribute('aria-expanded', 'false');
+            });
+        }
     });
 }

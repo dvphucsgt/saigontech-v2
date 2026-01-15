@@ -1156,69 +1156,68 @@ msgstr "SGTech Team"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:18
 msgid ""
-"Hơn 10 năm kinh nghiệm, SGTech tự hào là đối tác công nghệ tin cậy đồng hành "
-"cùng hơn 30 doanh nghiệp Việt trong hành trình chuyển đổi số."
+"Sáng tạo - Chuyên nghiệp - Chất lượng - Linh hoạt. SGTech tự hào đồng hành "
+"cùng hàng trăm doanh nghiệp trong hành trình chuyển đổi số."
 msgstr ""
-"With over 10 years of experience, SGTech is proud to be a trusted technology "
-"partner accompanying more than 30 Vietnamese enterprises on their digital "
-"transformation journey."
+"Creative - Professional - Quality - Flexible. SGTech is proud to accompany "
+"hundreds of enterprises on their digital transformation journey."
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:30
 msgid "Câu chuyện của chúng tôi"
 msgstr "Our Story"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:32
-msgid "Từ đam mê công nghệ đến đối tác tin cậy"
-msgstr "From Technology Passion to Trusted Partner"
+msgid "Kiến tạo giá trị số, đồng hành thành công"
+msgstr "Creating Digital Value, Accompanying Success"
 
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:35
-#, php-format
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:36
 msgid ""
-"<strong class=\"text-dark\">SGTech được thành lập vào năm %d</strong> bởi "
-"nhóm 5 kỹ sư công nghệ đam mê với tầm nhìn: trở thành đối tác tin cậy cho "
-"các doanh nghiệp Việt Nam trong hành trình số hóa."
+"<strong class=\"text-dark\">SGTech được thành lập năm 2019</strong> với khát "
+"vọng mang đến những giải pháp công nghệ đột phá cho doanh nghiệp Việt. Chúng "
+"tôi tin rằng mỗi doanh nghiệp đều xứng đáng có được những sản phẩm số chất "
+"lượng cao, được tạo ra bởi đội ngũ thực sự tâm huyết."
 msgstr ""
-"<strong class=\"text-dark\">SGTech was founded in %d</strong> by a group of "
-"5 passionate technology engineers with a vision: to become a trusted partner "
-"for Vietnamese enterprises on their digitalization journey."
+"<strong class=\"text-dark\">SGTech was founded in 2019</strong> with the "
+"aspiration to bring breakthrough technology solutions to Vietnamese "
+"enterprises. We believe every business deserves high-quality digital "
+"products, created by a truly dedicated team."
 
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:38
-#, php-format
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:39
 msgid ""
-"Xuất phát từ những dự án nhỏ cho startup và SME, chúng tôi dần khẳng định uy "
-"tín qua chất lượng sản phẩm và sự tận tâm với khách hàng. Sau hơn 10 năm, "
-"SGTech đã phát triển thành đội ngũ <strong class=\"text-dark\">%d+ chuyên "
-"gia công nghệ</strong>, hoàn thành <strong class=\"text-dark\">%d+ dự án đa "
-"dạng</strong> trong các lĩnh vực: bất động sản, bán lẻ, sản xuất, logistics, "
-"y tế..."
+"Với triết lý <strong class=\"text-dark\">\"Sáng tạo không giới hạn - Chất "
+"lượng không thỏa hiệp\"</strong>, SGTech đã nhanh chóng khẳng định vị thế "
+"trên thị trường. Chúng tôi tự hào đã đồng hành cùng hàng trăm khách hàng "
+"trong và ngoài nước, từ startup năng động đến các tập đoàn lớn, mang đến "
+"những giải pháp công nghệ linh hoạt và hiệu quả."
 msgstr ""
-"Starting from small projects for startups and SMEs, we gradually built our "
-"reputation through product quality and customer dedication. After more than "
-"10 years, SGTech has grown into a team of <strong class=\"text-dark\">%d+ "
-"technology experts</strong>, completing <strong class=\"text-dark\">%d+ "
-"diverse projects</strong> in various industries: real estate, retail, "
-"manufacturing, logistics, healthcare..."
+"With the philosophy <strong class=\"text-dark\">\"Unlimited creativity - "
+"Uncompromising quality\"</strong>, SGTech has quickly established its "
+"position in the market. We are proud to have accompanied hundreds of "
+"domestic and international clients, from dynamic startups to large "
+"corporations, delivering flexible and effective technology solutions."
 
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:41
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:42
 msgid ""
-"Chúng tôi tin rằng công nghệ không chỉ là công cụ, mà là động lực giúp doanh "
-"nghiệp bứt phá. Mỗi dự án của SGTech đều được thực hiện với cam kết: <strong "
-"class=\"text-dark\">chất lượng, đúng tiến độ, đồng hành lâu dài</strong>."
+"Tại SGTech, mỗi dự án là một cơ hội để chứng minh cam kết của chúng tôi: "
+"<strong class=\"text-dark\">Chuyên nghiệp trong từng quy trình, tận tâm trong "
+"từng sản phẩm, và luôn sẵn sàng thích ứng với mọi yêu cầu của khách hàng</strong>."
 msgstr ""
-"We believe that technology is not just a tool, but a driving force to help "
-"businesses break through. Every SGTech project is executed with commitment: "
-"<strong class=\"text-dark\">quality, on time, long-term partnership</strong>."
+"At SGTech, every project is an opportunity to prove our commitment: "
+"<strong class=\"text-dark\">Professional in every process, dedicated in every "
+"product, and always ready to adapt to all customer requirements</strong>."
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:51
 msgid "Đội ngũ SGTech trong buổi họp chiến lược"
 msgstr "SGTech team in a strategy meeting"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:61
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:207
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:214
 #, php-format
 msgid "%d+"
 msgstr "%d+"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:63
+msgid "Năm phát triển"
+msgstr "Years of Growth"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:78
 msgid "Hành trình phát triển"
@@ -1229,44 +1228,44 @@ msgid "Những cột mốc quan trọng đánh dấu sự trưởng thành của
 msgstr "Important milestones marking SGTech's growth."
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:89
-msgid "Khởi đầu"
-msgstr "Beginning"
+msgid "Khởi nguồn"
+msgstr "Origin"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:92
-msgid "SGTech được thành lập với 5 thành viên sáng lập"
-msgstr "SGTech was founded with 5 founding members"
+msgid "SGTech chính thức ra đời với đội ngũ kỹ sư đam mê công nghệ"
+msgstr "SGTech was officially born with a team of passionate engineers"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:104
-msgid "Mở rộng"
-msgstr "Expansion"
+msgid "Vượt thử thách"
+msgstr "Overcoming Challenges"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:107
-msgid "Hoàn thành dự án thứ 10, đội ngũ tăng lên 8 người"
-msgstr "Completed 10th project, team grew to 8 people"
+msgid "Thích ứng linh hoạt, mở rộng dịch vụ trong đại dịch"
+msgstr "Flexibly adapting, expanding services during the pandemic"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:119
 msgid "Bứt phá"
 msgstr "Breakthrough"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:122
-msgid "Phục vụ hơn 20 khách hàng doanh nghiệp"
-msgstr "Serving more than 20 enterprise clients"
+msgid "Đạt 50+ dự án, khẳng định chất lượng với khách hàng quốc tế"
+msgstr "Reached 50+ projects, affirmed quality with international clients"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:135
 msgid "Chuyên nghiệp hóa"
 msgstr "Professionalization"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:137
-msgid "Áp dụng quy trình Agile, đạt 50+ dự án"
-msgstr "Applied Agile process, reached 50+ projects"
+msgid "Áp dụng quy trình Agile, nâng tầm chất lượng dịch vụ"
+msgstr "Applied Agile process, elevated service quality"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:149
-msgid "Hiện tại"
-msgstr "Present"
+msgid "Hiện tại & Tương lai"
+msgstr "Present & Future"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:152
-msgid "15+ chuyên gia, đối tác tin cậy của 30+ doanh nghiệp"
-msgstr "15+ experts, trusted partner of 30+ enterprises"
+msgid "Đối tác tin cậy của hàng trăm doanh nghiệp trong và ngoài nước"
+msgstr "Trusted partner of hundreds of domestic and international enterprises"
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:173
 msgid "Sứ mệnh"
@@ -1325,53 +1324,53 @@ msgstr ""
 "Core values that shape the culture, working methods and every decision at "
 "SGTech."
 
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:247
-msgid "Tận tâm"
-msgstr "Dedication"
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:250
+msgid "Sáng Tạo"
+msgstr "Creativity"
 
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:249
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:252
 msgid ""
-"Lắng nghe và thấu hiểu nhu cầu khách hàng, đặt lợi ích của họ lên hàng đầu "
-"trong mọi quyết định."
+"Luôn chú trọng tính sáng tạo trong công việc nhằm tạo ra những sản phẩm chất "
+"lượng, mang tính đột phá."
 msgstr ""
-"Listening and understanding customer needs, putting their interests first in "
-"every decision."
-
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:262
-msgid "Chính trực"
-msgstr "Integrity"
+"Always emphasizing creativity in work to create quality, breakthrough "
+"products."
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:265
-msgid ""
-"Minh bạch trong giao tiếp, trung thực về năng lực và cam kết thực hiện đúng "
-"những gì đã hứa."
-msgstr ""
-"Transparent in communication, honest about capabilities and committed to "
-"doing what we promise."
+msgid "Chuyên Nghiệp"
+msgstr "Professionalism"
 
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:278
-msgid "Sáng tạo"
-msgstr "Innovation"
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:268
+msgid ""
+"Nâng cao năng lực team-work, tập trung phát triển từng cá nhân. Hướng tới "
+"mục tiêu chung là làm hài lòng khách hàng."
+msgstr ""
+"Enhancing team-work capability, focusing on individual development. Aiming "
+"towards the common goal of customer satisfaction."
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:281
-msgid ""
-"Không ngừng học hỏi, áp dụng công nghệ mới để tìm kiếm giải pháp tối ưu cho "
-"từng bài toán."
-msgstr ""
-"Continuously learning, applying new technologies to find optimal solutions "
-"for each problem."
+msgid "Chất Lượng"
+msgstr "Quality"
 
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:294
-msgid "Hợp tác"
-msgstr "Collaboration"
-
-#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:296
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:284
 msgid ""
-"Xây dựng mối quan hệ đối tác lâu dài, cùng khách hàng phát triển và thành "
-"công."
+"Đảm bảo chất lượng sản phẩm với yêu cầu khắt khe từ các khách hàng khó tính "
+"nhất."
 msgstr ""
-"Building long-term partnerships, growing and succeeding together with "
-"customers."
+"Ensuring product quality with strict requirements from the most demanding "
+"clients."
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:297
+msgid "Linh Hoạt"
+msgstr "Flexibility"
+
+#: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:300
+msgid ""
+"Đa dạng hóa các loại hình phát triển một cách linh hoạt. Áp dụng các công "
+"nghệ tiên tiến nhằm tạo nên sự khác biệt."
+msgstr ""
+"Diversifying development types flexibly. Applying advanced technologies to "
+"create differentiation."
 
 #: wp-content/themes/saigontech-v2/page-ve-chung-toi.php:309
 msgid "Bạn muốn tìm hiểu thêm về SGTech?"
@@ -1421,3 +1420,4 @@ msgstr "Related Posts"
 #: wp-content/themes/saigontech-v2/single.php:172
 msgid "Chúng tôi sẵn sàng hỗ trợ bạn 24/7"
 msgstr "We are ready to support you 24/7"
+

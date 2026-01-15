@@ -33,9 +33,10 @@ get_header(); ?>
                         <span class="input-group-text bg-white border-end-0">
                             <i class="bi bi-search sgtech-v2-text-muted-foreground"></i>
                         </span>
-                        <input type="text" name="s" class="form-control border-start-0 ps-0"
+                        <input type="text" name="blog_search" class="form-control border-start-0 ps-0"
                             placeholder="<?php esc_attr_e('Tìm kiếm bài viết...', 'saigontech-v2'); ?>"
-                            id="sgtech-v2-blog-search" value="<?php echo get_search_query(); ?>">
+                            id="sgtech-v2-blog-search"
+                            value="<?php echo isset($_GET['blog_search']) ? esc_attr(sanitize_text_field($_GET['blog_search'])) : ''; ?>">
                         <button class="btn btn-outline-secondary"
                             type="submit"><?php _e('Tìm', 'saigontech-v2'); ?></button>
                     </div>
@@ -81,22 +82,24 @@ get_header(); ?>
             $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $posts_per_page = 9;
 
-            // Get current language from Polylang
+            // Get current language from sgtech_get_current_language() function
             $current_lang = 'vi'; // Default
-            if (function_exists('pll_current_language')) {
+            if (function_exists('sgtech_get_current_language')) {
+                $current_lang = sgtech_get_current_language();
+            } elseif (function_exists('pll_current_language')) {
                 $current_lang = pll_current_language('slug');
             }
 
-            // Get category ID directly from database (bypass Polylang filter)
+            // Get the language category ID by slug (vi, en, ja)
             global $wpdb;
             $lang_category_id = $wpdb->get_var($wpdb->prepare(
                 "SELECT t.term_id FROM {$wpdb->terms} t 
                  INNER JOIN {$wpdb->term_taxonomy} tt ON t.term_id = tt.term_id 
                  WHERE t.slug = %s AND tt.taxonomy = 'category'",
-                $current_lang
+                strtolower($current_lang)
             ));
 
-            echo "<!-- DEBUG: category '{$current_lang}' ID = " . ($lang_category_id ? $lang_category_id : 'NOT FOUND') . " -->";
+            echo "<!-- DEBUG: language '{$current_lang}', category ID = " . ($lang_category_id ? $lang_category_id : 'NOT FOUND') . " -->";
 
             // Category Translation Map
             $category_translations = array(
@@ -116,16 +119,20 @@ get_header(); ?>
 
             // Helper to translate category name
             $translate_category = function ($name) use ($current_lang, $category_translations) {
-                if (isset($category_translations[$current_lang]) && isset($category_translations[$current_lang][$name])) {
-                    return $category_translations[$current_lang][$name];
+                // Remove language suffix from category name for display
+                $base_name = str_replace(array(', VI', ', EN', ', JA'), '', $name);
+
+                if (isset($category_translations[$current_lang]) && isset($category_translations[$current_lang][$base_name])) {
+                    return $category_translations[$current_lang][$base_name];
                 }
-                return $name; // Fallback to original name
+                return $base_name; // Fallback to base name without suffix
             };
 
-            // Helper to get display category (filter out language cats)
+            // Helper to get display category (filter out language-only cats)
             $get_display_category = function ($post_id) use ($translate_category) {
                 $cats = get_the_category($post_id);
                 foreach ($cats as $cat) {
+                    // Skip categories that are just language codes or uncategorized
                     if (!in_array($cat->slug, array('vi', 'en', 'ja', 'uncategorized'))) {
                         return $translate_category($cat->name);
                     }
@@ -136,32 +143,30 @@ get_header(); ?>
                 }
                 return '';
             };
-            // Fallback to 'vi' if not found
-            if (!$lang_category_id) {
-                $lang_category_id = $wpdb->get_var(
-                    "SELECT t.term_id FROM {$wpdb->terms} t 
-                     INNER JOIN {$wpdb->term_taxonomy} tt ON t.term_id = tt.term_id 
-                     WHERE t.slug = 'vi' AND tt.taxonomy = 'category'"
-                );
-            }
 
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => $posts_per_page,
                 'paged' => $paged,
                 'lang' => '', // Bypass Polylang filter for posts
-                // Filter by language category using term_id
-                'tax_query' => array(
+            );
+
+            // Filter by language category if found
+            if ($lang_category_id) {
+                $args['tax_query'] = array(
                     array(
                         'taxonomy' => 'category',
                         'field' => 'term_id',
                         'terms' => (int) $lang_category_id,
                     ),
-                ),
-            );
+                );
+            }
+
+            // Get blog search query from custom parameter
+            $blog_search_query = isset($_GET['blog_search']) ? sanitize_text_field($_GET['blog_search']) : '';
 
             // Logic differentiation: Main Blog vs Search/Category
-            $is_filtered = get_search_query() || get_query_var('category_name');
+            $is_filtered = $blog_search_query || get_query_var('category_name');
 
             if (!$is_filtered) {
                 // Main Blog with Featured Post
@@ -175,8 +180,9 @@ get_header(); ?>
                 }
             } else {
                 // Search or Category: No Featured Post, standard 9 per page
-                if (get_search_query())
-                    $args['s'] = get_search_query();
+                if ($blog_search_query) {
+                    $args['s'] = $blog_search_query;
+                }
                 if (get_query_var('category_name')) {
                     // Get topic category ID directly from database (bypass Polylang filter)
                     $topic_slug = get_query_var('category_name');
@@ -188,13 +194,20 @@ get_header(); ?>
                     ));
 
                     if ($topic_category_id) {
+                        // Initialize tax_query if not set
+                        if (!isset($args['tax_query'])) {
+                            $args['tax_query'] = array();
+                        }
                         // Add topic category filter while keeping language category
                         $args['tax_query'][] = array(
                             'taxonomy' => 'category',
                             'field' => 'term_id',
                             'terms' => (int) $topic_category_id,
                         );
-                        $args['tax_query']['relation'] = 'AND';
+                        // Set relation to AND if we have multiple conditions
+                        if (count($args['tax_query']) > 1) {
+                            $args['tax_query']['relation'] = 'AND';
+                        }
                     }
                 }
 
@@ -206,23 +219,27 @@ get_header(); ?>
 
             if ($blog_query->have_posts()):
                 ?>
-                <?php if (!get_search_query() && !get_query_var('category_name') && $paged == 1): ?>
+                <?php if (!$blog_search_query && !get_query_var('category_name') && $paged == 1): ?>
                     <section class="sgtech-v2-section-padding sgtech-v2-featured-post">
                         <div class="container">
                             <?php
-                            // Get the first post for featured display (same language category)
+                            // Get the first post for featured display (same language categories)
                             $featured_args = array(
                                 'posts_per_page' => 1,
                                 'ignore_sticky_posts' => 1,
                                 'lang' => '', // Bypass Polylang filter
-                                'tax_query' => array(
+                            );
+
+                            // Filter by language category if found
+                            if ($lang_category_id) {
+                                $featured_args['tax_query'] = array(
                                     array(
                                         'taxonomy' => 'category',
                                         'field' => 'term_id',
                                         'terms' => (int) $lang_category_id,
                                     ),
-                                ),
-                            );
+                                );
+                            }
                             $featured_query = new WP_Query($featured_args);
                             if ($featured_query->have_posts()):
                                 while ($featured_query->have_posts()):
@@ -285,7 +302,7 @@ get_header(); ?>
                     <div class="container">
                         <h2 class="h5 fw-bold mb-4 sgtech-v2-results-count">
                             <?php
-                            if (get_search_query() || get_query_var('category_name')) {
+                            if ($blog_search_query || get_query_var('category_name')) {
                                 _e('Kết quả tìm kiếm', 'saigontech-v2');
                             } else {
                                 _e('Bài viết mới nhất', 'saigontech-v2');
@@ -359,7 +376,7 @@ get_header(); ?>
                                 'next_text' => __('Sau', 'saigontech-v2') . ' <i class="bi bi-chevron-right ms-2"></i>',
                                 'type' => 'plain',
                                 'add_args' => array(
-                                    's' => get_search_query(),
+                                    'blog_search' => $blog_search_query,
                                     'category_name' => get_query_var('category_name')
                                 )
                             ));

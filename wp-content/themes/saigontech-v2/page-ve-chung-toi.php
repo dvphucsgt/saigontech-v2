@@ -15,7 +15,7 @@ get_header(); ?>
         <div class="container position-relative">
             <div class="text-center mx-auto sgtech-v2-max-w-700">
                 <h1 class="text-white mb-4"><?php _e('Về SGTech', 'saigontech-v2'); ?></h1>
-                <?php _e('Hơn 10 năm kinh nghiệm, SGTech tự hào là đối tác công nghệ tin cậy đồng hành cùng hơn 30 doanh nghiệp Việt trong hành trình chuyển đổi số.', 'saigontech-v2'); ?>
+                <?php _e('Sáng tạo - Chuyên nghiệp - Chất lượng - Linh hoạt. SGTech tự hào đồng hành cùng hàng trăm doanh nghiệp trong hành trình chuyển đổi số.', 'saigontech-v2'); ?>
             </div>
         </div>
     </section>
@@ -29,17 +29,17 @@ get_header(); ?>
                     <span
                         class="badge badge-secondary mb-3 fs-7"><?php _e('Câu chuyện của chúng tôi', 'saigontech-v2'); ?></span>
                     <h2 class="display-6 fw-bold mb-4">
-                        <?php _e('Từ đam mê công nghệ đến đối tác tin cậy', 'saigontech-v2'); ?>
+                        <?php _e('Kiến tạo giá trị số, đồng hành thành công', 'saigontech-v2'); ?>
                     </h2>
                     <div class="sgtech-v2-text-muted-foreground leading-relaxed">
                         <p>
-                            <?php printf(__('<strong class="text-dark">SGTech được thành lập vào năm %d</strong> bởi nhóm 5 kỹ sư công nghệ đam mê với tầm nhìn: trở thành đối tác tin cậy cho các doanh nghiệp Việt Nam trong hành trình số hóa.', 'saigontech-v2'), 2014); ?>
+                            <?php _e('<strong class="text-dark">SGTech được thành lập năm 2019</strong> với khát vọng mang đến những giải pháp công nghệ đột phá cho doanh nghiệp Việt. Chúng tôi tin rằng mỗi doanh nghiệp đều xứng đáng có được những sản phẩm số chất lượng cao, được tạo ra bởi đội ngũ thực sự tâm huyết.', 'saigontech-v2'); ?>
                         </p>
                         <p>
-                            <?php printf(__('Xuất phát từ những dự án nhỏ cho startup và SME, chúng tôi dần khẳng định uy tín qua chất lượng sản phẩm và sự tận tâm với khách hàng. Sau hơn 10 năm, SGTech đã phát triển thành đội ngũ <strong class="text-dark">%d+ chuyên gia công nghệ</strong>, hoàn thành <strong class="text-dark">%d+ dự án đa dạng</strong> trong các lĩnh vực: bất động sản, bán lẻ, sản xuất, logistics, y tế...', 'saigontech-v2'), 15, 50); ?>
+                            <?php _e('Với triết lý <strong class="text-dark">"Sáng tạo không giới hạn - Chất lượng không thỏa hiệp"</strong>, SGTech đã nhanh chóng khẳng định vị thế trên thị trường. Chúng tôi tự hào đã đồng hành cùng hàng trăm khách hàng trong và ngoài nước, từ startup năng động đến các tập đoàn lớn, mang đến những giải pháp công nghệ linh hoạt và hiệu quả.', 'saigontech-v2'); ?>
                         </p>
                         <p>
-                            <?php _e('Chúng tôi tin rằng công nghệ không chỉ là công cụ, mà là động lực giúp doanh nghiệp bứt phá. Mỗi dự án của SGTech đều được thực hiện với cam kết: <strong class="text-dark">chất lượng, đúng tiến độ, đồng hành lâu dài</strong>.', 'saigontech-v2'); ?>
+                            <?php _e('Tại SGTech, mỗi dự án là một cơ hội để chứng minh cam kết của chúng tôi: <strong class="text-dark">Chuyên nghiệp trong từng quy trình, tận tâm trong từng sản phẩm, và luôn sẵn sàng thích ứng với mọi yêu cầu của khách hàng</strong>.', 'saigontech-v2'); ?>
                         </p>
                     </div>
                 </div>
@@ -59,10 +59,10 @@ get_header(); ?>
                             </div>
                             <div>
                                 <div class="fw-bold text-primary mb-0 sgtech-v2-text-3xl">
-                                    <?php printf(__('%d+', 'saigontech-v2'), 10); ?>
+                                    <?php printf(__('%d+', 'saigontech-v2'), 5); ?>
                                 </div>
                                 <div class="small sgtech-v2-text-muted-foreground">
-                                    <?php _e('Năm kinh nghiệm', 'saigontech-v2'); ?>
+                                    <?php _e('Năm phát triển', 'saigontech-v2'); ?>
                                 </div>
                             </div>
                         </div>
@@ -85,15 +85,15 @@ get_header(); ?>
             </div>
 
             <div class="sgtech-v2-timeline">
-                <!-- Milestone 1 (2014) - Left -->
+                <!-- Milestone 1 (2019) - Left -->
                 <div class="sgtech-v2-timeline-item">
                     <div class="sgtech-v2-timeline-content sgtech-v2-text-end">
                         <div class="sgtech-v2-timeline-card">
-                            <div class="text-secondary fw-bold fs-5 mb-1">2014</div>
-                            <h5 class="fw-semibold mb-2 sgtech-v2-text-base"><?php _e('Khởi đầu', 'saigontech-v2'); ?>
+                            <div class="text-secondary fw-bold fs-5 mb-1">2019</div>
+                            <h5 class="fw-semibold mb-2 sgtech-v2-text-base"><?php _e('Khởi nguồn', 'saigontech-v2'); ?>
                             </h5>
                             <p class="sgtech-v2-text-muted-foreground small mb-0">
-                                <?php _e('SGTech được thành lập với 5 thành viên sáng lập', 'saigontech-v2'); ?>
+                                <?php _e('SGTech chính thức ra đời với đội ngũ kỹ sư đam mê công nghệ', 'saigontech-v2'); ?>
                             </p>
                         </div>
                     </div>
@@ -101,15 +101,16 @@ get_header(); ?>
                     <div class="sgtech-v2-timeline-spacer"></div>
                 </div>
 
-                <!-- Milestone 2 (2016) - Right -->
+                <!-- Milestone 2 (2020) - Right -->
                 <div class="sgtech-v2-timeline-item flex-md-row-reverse">
                     <div class="sgtech-v2-timeline-content text-start">
                         <div class="sgtech-v2-timeline-card">
-                            <div class="text-secondary fw-bold fs-5 mb-1"><?php echo 2016; ?></div>
-                            <h5 class="fw-semibold mb-2 sgtech-v2-text-base"><?php _e('Mở rộng', 'saigontech-v2'); ?>
+                            <div class="text-secondary fw-bold fs-5 mb-1">2020</div>
+                            <h5 class="fw-semibold mb-2 sgtech-v2-text-base">
+                                <?php _e('Vượt thử thách', 'saigontech-v2'); ?>
                             </h5>
                             <p class="sgtech-v2-text-muted-foreground small mb-0">
-                                <?php _e('Hoàn thành dự án thứ 10, đội ngũ tăng lên 8 người', 'saigontech-v2'); ?>
+                                <?php _e('Thích ứng linh hoạt, mở rộng dịch vụ trong đại dịch', 'saigontech-v2'); ?>
                             </p>
                         </div>
                     </div>
@@ -117,15 +118,15 @@ get_header(); ?>
                     <div class="sgtech-v2-timeline-spacer"></div>
                 </div>
 
-                <!-- Milestone 3 (2019) - Left -->
+                <!-- Milestone 3 (2022) - Left -->
                 <div class="sgtech-v2-timeline-item">
                     <div class="sgtech-v2-timeline-content sgtech-v2-text-end">
                         <div class="sgtech-v2-timeline-card">
-                            <div class="text-secondary fw-bold fs-5 mb-1"><?php echo 2019; ?></div>
+                            <div class="text-secondary fw-bold fs-5 mb-1">2022</div>
                             <h5 class="fw-semibold mb-2 sgtech-v2-text-base"><?php _e('Bứt phá', 'saigontech-v2'); ?>
                             </h5>
                             <p class="sgtech-v2-text-muted-foreground small mb-0">
-                                <?php _e('Phục vụ hơn 20 khách hàng doanh nghiệp', 'saigontech-v2'); ?>
+                                <?php _e('Đạt 50+ dự án, khẳng định chất lượng với khách hàng quốc tế', 'saigontech-v2'); ?>
                             </p>
                         </div>
                     </div>
@@ -133,16 +134,16 @@ get_header(); ?>
                     <div class="sgtech-v2-timeline-spacer"></div>
                 </div>
 
-                <!-- Milestone 4 (2022) - Right -->
+                <!-- Milestone 4 (2024) - Right -->
                 <div class="sgtech-v2-timeline-item flex-md-row-reverse">
                     <div class="sgtech-v2-timeline-content text-start">
                         <div class="sgtech-v2-timeline-card">
-                            <div class="text-secondary fw-bold fs-5 mb-1"><?php echo 2022; ?></div>
+                            <div class="text-secondary fw-bold fs-5 mb-1">2024</div>
                             <h5 class="fw-semibold mb-2 sgtech-v2-text-base">
                                 <?php _e('Chuyên nghiệp hóa', 'saigontech-v2'); ?>
                             </h5>
                             <p class="sgtech-v2-text-muted-foreground small mb-0">
-                                <?php _e('Áp dụng quy trình Agile, đạt 50+ dự án', 'saigontech-v2'); ?>
+                                <?php _e('Áp dụng quy trình Agile, nâng tầm chất lượng dịch vụ', 'saigontech-v2'); ?>
                             </p>
                         </div>
                     </div>
@@ -150,15 +151,16 @@ get_header(); ?>
                     <div class="sgtech-v2-timeline-spacer"></div>
                 </div>
 
-                <!-- Milestone 5 (2024) - Left -->
+                <!-- Milestone 5 (2025) - Left -->
                 <div class="sgtech-v2-timeline-item">
                     <div class="sgtech-v2-timeline-content sgtech-v2-text-end">
                         <div class="sgtech-v2-timeline-card">
-                            <div class="text-secondary fw-bold fs-5 mb-1"><?php echo 2024; ?></div>
-                            <h5 class="fw-semibold mb-2 sgtech-v2-text-base"><?php _e('Hiện tại', 'saigontech-v2'); ?>
+                            <div class="text-secondary fw-bold fs-5 mb-1">2025</div>
+                            <h5 class="fw-semibold mb-2 sgtech-v2-text-base">
+                                <?php _e('Hiện tại & Tương lai', 'saigontech-v2'); ?>
                             </h5>
                             <p class="sgtech-v2-text-muted-foreground small mb-0">
-                                <?php _e('15+ chuyên gia, đối tác tin cậy của 30+ doanh nghiệp', 'saigontech-v2'); ?>
+                                <?php _e('Đối tác tin cậy của hàng trăm doanh nghiệp trong và ngoài nước', 'saigontech-v2'); ?>
                             </p>
                         </div>
                     </div>
@@ -206,7 +208,7 @@ get_header(); ?>
                     <div class="sgtech-v2-icon-box-sm mx-auto mb-3 bg-secondary-muted">
                         <i class="bi bi-briefcase text-secondary"></i>
                     </div>
-                    <div class="h2 fw-bold text-secondary mb-1"><?php echo 2014; ?></div>
+                    <div class="h2 fw-bold text-secondary mb-1">2019</div>
                     <div class="opacity-75 small"><?php _e('Năm thành lập', 'saigontech-v2'); ?></div>
                 </div>
                 <div class="col-6 col-md-3">
@@ -246,63 +248,66 @@ get_header(); ?>
             </div>
 
             <div class="row g-4">
-                <!-- Value 1 -->
+                <!-- Value 1: Sáng Tạo -->
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 text-center">
                         <div class="card-body p-4">
                             <div class="sgtech-v2-icon-box mx-auto mb-4 sgtech-v2-bg-gradient-blue-emerald">
-                                <i class="bi bi-heart text-secondary"></i>
+                                <i class="bi bi-lightbulb text-secondary"></i>
                             </div>
-                            <h5 class="fw-semibold mb-3 sgtech-v2-text-xl"><?php _e('Tận tâm', 'saigontech-v2'); ?></h5>
-                            <p class="sgtech-v2-text-muted-foreground small leading-relaxed mb-0">
-                                <?php _e('Lắng nghe và thấu hiểu nhu cầu khách hàng, đặt lợi ích của họ lên hàng đầu trong mọi quyết định.', 'saigontech-v2'); ?>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Value 2 -->
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 text-center">
-                        <div class="card-body p-4">
-                            <div class="sgtech-v2-icon-box mx-auto mb-4 sgtech-v2-bg-gradient-blue-emerald">
-                                <i class="bi bi-shield-check text-secondary"></i>
-                            </div>
-                            <h5 class="fw-semibold mb-3 sgtech-v2-text-xl"><?php _e('Chính trực', 'saigontech-v2'); ?>
+                            <h5 class="fw-semibold mb-3 sgtech-v2-text-xl"><?php _e('Sáng Tạo', 'saigontech-v2'); ?>
                             </h5>
                             <p class="sgtech-v2-text-muted-foreground small leading-relaxed mb-0">
-                                <?php _e('Minh bạch trong giao tiếp, trung thực về năng lực và cam kết thực hiện đúng những gì đã hứa.', 'saigontech-v2'); ?>
+                                <?php _e('Luôn chú trọng tính sáng tạo trong công việc nhằm tạo ra những sản phẩm chất lượng, mang tính đột phá.', 'saigontech-v2'); ?>
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Value 3 -->
+                <!-- Value 2: Chuyên Nghiệp -->
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 text-center">
                         <div class="card-body p-4">
                             <div class="sgtech-v2-icon-box mx-auto mb-4 sgtech-v2-bg-gradient-blue-emerald">
-                                <i class="bi bi-lightning text-secondary"></i>
+                                <i class="bi bi-briefcase text-secondary"></i>
                             </div>
-                            <h5 class="fw-semibold mb-3 sgtech-v2-text-xl"><?php _e('Sáng tạo', 'saigontech-v2'); ?>
+                            <h5 class="fw-semibold mb-3 sgtech-v2-text-xl">
+                                <?php _e('Chuyên Nghiệp', 'saigontech-v2'); ?>
                             </h5>
                             <p class="sgtech-v2-text-muted-foreground small leading-relaxed mb-0">
-                                <?php _e('Không ngừng học hỏi, áp dụng công nghệ mới để tìm kiếm giải pháp tối ưu cho từng bài toán.', 'saigontech-v2'); ?>
+                                <?php _e('Nâng cao năng lực team-work, tập trung phát triển từng cá nhân. Hướng tới mục tiêu chung là làm hài lòng khách hàng.', 'saigontech-v2'); ?>
                             </p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Value 4 -->
+                <!-- Value 3: Chất Lượng -->
                 <div class="col-md-6 col-lg-3">
                     <div class="card h-100 text-center">
                         <div class="card-body p-4">
                             <div class="sgtech-v2-icon-box mx-auto mb-4 sgtech-v2-bg-gradient-blue-emerald">
-                                <i class="bi bi-people text-secondary"></i>
+                                <i class="bi bi-award text-secondary"></i>
                             </div>
-                            <h5 class="fw-semibold mb-3 sgtech-v2-text-xl"><?php _e('Hợp tác', 'saigontech-v2'); ?></h5>
+                            <h5 class="fw-semibold mb-3 sgtech-v2-text-xl"><?php _e('Chất Lượng', 'saigontech-v2'); ?>
+                            </h5>
                             <p class="sgtech-v2-text-muted-foreground small leading-relaxed mb-0">
-                                <?php _e('Xây dựng mối quan hệ đối tác lâu dài, cùng khách hàng phát triển và thành công.', 'saigontech-v2'); ?>
+                                <?php _e('Đảm bảo chất lượng sản phẩm với yêu cầu khắt khe từ các khách hàng khó tính nhất.', 'saigontech-v2'); ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Value 4: Linh Hoạt -->
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <div class="card-body p-4">
+                            <div class="sgtech-v2-icon-box mx-auto mb-4 sgtech-v2-bg-gradient-blue-emerald">
+                                <i class="bi bi-arrows-angle-expand text-secondary"></i>
+                            </div>
+                            <h5 class="fw-semibold mb-3 sgtech-v2-text-xl"><?php _e('Linh Hoạt', 'saigontech-v2'); ?>
+                            </h5>
+                            <p class="sgtech-v2-text-muted-foreground small leading-relaxed mb-0">
+                                <?php _e('Đa dạng hóa các loại hình phát triển một cách linh hoạt. Áp dụng các công nghệ tiên tiến nhằm tạo nên sự khác biệt.', 'saigontech-v2'); ?>
                             </p>
                         </div>
                     </div>

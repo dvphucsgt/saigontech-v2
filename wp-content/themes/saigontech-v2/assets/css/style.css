@@ -778,6 +778,7 @@ img {
     position: absolute;
     inset: 0;
     opacity: 0.1;
+    z-index: -1;
     background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
@@ -845,6 +846,28 @@ img {
 
 .sgtech-v2-client-logo:hover .sgtech-v2-abbr {
     color: var(--primary);
+}
+
+/* Client Logo Images */
+.sgtech-v2-client-logo-img {
+    max-width: 100%;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    /* filter: grayscale(100%); */
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.sgtech-v2-client-logo:hover {
+    cursor: pointer;
+}
+
+.sgtech-v2-client-logo:hover .sgtech-v2-client-logo-img {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.2);
 }
 
 /* Service Card */
@@ -2051,4 +2074,144 @@ img {
     color: var(--secondary);
     font-weight: 600;
     background-color: rgba(59, 130, 246, 0.05);
+}
+
+/* =============================================
+   Language Switcher - Custom Dropdown
+   ============================================= */
+.sgtech-lang-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.sgtech-lang-current {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.5rem 0.75rem;
+    background: transparent;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius-lg);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--foreground);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.sgtech-lang-current:hover {
+    border-color: var(--secondary);
+    color: var(--secondary);
+}
+
+.sgtech-lang-flag {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.sgtech-lang-code {
+    font-weight: 600;
+    letter-spacing: 0.025em;
+}
+
+.sgtech-lang-arrow {
+    font-size: 0.625rem;
+    margin-left: 0.125rem;
+    transition: transform 0.2s ease;
+}
+
+.sgtech-lang-switcher:hover .sgtech-lang-arrow,
+.sgtech-lang-switcher.open .sgtech-lang-arrow {
+    transform: rotate(180deg);
+}
+
+.sgtech-lang-dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    min-width: 160px;
+    padding: 0.5rem 0;
+    margin: 0;
+    list-style: none;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.2s ease;
+    z-index: 1000;
+}
+
+.sgtech-lang-switcher:hover .sgtech-lang-dropdown,
+.sgtech-lang-switcher.open .sgtech-lang-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sgtech-lang-dropdown li {
+    margin: 0;
+    padding: 0;
+}
+
+.sgtech-lang-option {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.625rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--foreground);
+    text-decoration: none;
+    transition: all 0.15s ease;
+}
+
+.sgtech-lang-option:hover {
+    background-color: rgba(59, 130, 246, 0.08);
+    color: var(--secondary);
+}
+
+.sgtech-lang-option.active {
+    color: var(--secondary);
+    background-color: rgba(59, 130, 246, 0.05);
+}
+
+.sgtech-lang-name {
+    flex: 1;
+}
+
+.sgtech-lang-check {
+    font-size: 0.875rem;
+    color: var(--secondary);
+}
+
+/* Mobile adjustments */
+@media (max-width: 991.98px) {
+    .sgtech-lang-switcher {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .sgtech-lang-current {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .sgtech-lang-dropdown {
+        position: static;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        display: none;
+        box-shadow: none;
+        border: 1px solid var(--border);
+        margin-top: 0.5rem;
+    }
+
+    .sgtech-lang-switcher.open .sgtech-lang-dropdown {
+        display: block;
+    }
 }

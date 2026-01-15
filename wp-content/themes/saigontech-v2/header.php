@@ -58,10 +58,10 @@
                                 <a class="nav-link <?php echo is_page('dich-vu') ? 'active' : ''; ?>"
                                     href="<?php echo sgtech_get_page_url('dich-vu'); ?>"><?php _e('Dịch vụ', 'saigontech-v2'); ?></a>
                             </li>
-                            <li class="nav-item">
+                            <!-- <li class="nav-item">
                                 <a class="nav-link <?php echo is_page('du-an') ? 'active' : ''; ?>"
                                     href="<?php echo sgtech_get_page_url('du-an'); ?>"><?php _e('Dự án', 'saigontech-v2'); ?></a>
-                            </li>
+                            </li> -->
                             <li class="nav-item">
                                 <a class="nav-link <?php echo is_home() || is_singular('post') || is_page('blog') ? 'active' : ''; ?>"
                                     href="<?php echo sgtech_get_page_url('blog'); ?>"><?php _e('Blog', 'saigontech-v2'); ?></a>
@@ -72,9 +72,16 @@
                             </li>
                         </ul>
                     <?php endif; ?>
+
+                    <!-- Mobile Language Switcher -->
+                    <div class="d-lg-none">
+                        <?php echo sgtech_language_switcher(); ?>
+                    </div>
                 </div>
-                <!-- CTA Button -->
-                <div class="d-none d-lg-block">
+
+                <!-- Desktop: CTA Button + Language Switcher -->
+                <div class="d-none d-lg-flex align-items-center gap-3">
+                    <?php echo sgtech_language_switcher(); ?>
                     <a href="<?php echo sgtech_get_page_url('lien-he'); ?>"
                         class="btn btn-secondary"><?php _e('Liên hệ ngay', 'saigontech-v2'); ?></a>
                 </div>
